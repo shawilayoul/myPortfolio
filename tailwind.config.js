@@ -8,7 +8,8 @@ export default {
      oranged:"#ff5400",
      white:"#ffffff",
      black:"#000",
-     gray:"#e5e5e5"
+     gray:"#e5e5e5",
+     darkBlue:"#1d3557"
     },
     extend: {},
   },

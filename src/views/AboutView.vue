@@ -3,7 +3,7 @@ import { image } from '@/assets/images'
 </script>
 
 <template>
-  <main class="flex items-center w-[80%] m-auto h-[80vh] gap-10">
+  <main class="flex items-center w-[80%] m-auto h-[100vh] gap-10 transition delay-3000 duration-3000 ">
     <div class="flex flex-col flex-1 gap-10 w-[100%]">
       <h2 class="text-[30px] font-bold">About Me</h2>
       <p>
@@ -15,7 +15,7 @@ import { image } from '@/assets/images'
         me to develop essential qualities such as teamwork, a sense of rigour, patience and a strong
         taste for problem solving.
       </p>
-      <div class="flex gap-12">
+      <div class="social flex gap-12">
         <i class="pi pi-github text-oranged" style="font-size: 2rem"></i>
         <i class="pi pi-linkedin text-blue" style="font-size: 2rem"></i>
         <i class="pi pi-instagram text-oranged" style="font-size: 2rem"></i>
@@ -49,7 +49,7 @@ import { image } from '@/assets/images'
   </main>
 </template>
 
-<style lang="postcss" scoped>
+<style scoped>
 .hombtn {
   background: #0575e6; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #021b79, #0575e6); /* Chrome 10-25, Safari 5.1-6 */
@@ -63,6 +63,8 @@ import { image } from '@/assets/images'
   height: 400px;
   border: solid 2px gray;
   border-radius: 50%;
+  animation: fade-in linear;
+  animation-timeline: scroll();
 }
 .icon {
   display: flex;
@@ -125,6 +127,7 @@ import { image } from '@/assets/images'
   animation: animate-02 5s linear infinite;
 }
 
+
 @keyframes animate-01{
   0%{
     rotate: 0deg;
@@ -141,4 +144,13 @@ import { image } from '@/assets/images'
     rotate:  360deg;
   }
 }
+
+@keyframes fade-in{
+ 
+  to{
+    scale: 1;
+
+  }
+}
+
 </style>

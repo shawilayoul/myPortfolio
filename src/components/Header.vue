@@ -5,45 +5,45 @@ const menus = [
   
   {
     title: 'Home',
-    link: '/'
+    link: '#home'
   },
   {
     title: 'About',
-    link: 'about'
+    link: '#about'
   },
 
   {
     title: 'Skills',
-    link: 'skills'
+    link: '#skill'
   },
   {
     title: 'Education',
-    link: 'education'
+    link: '#education'
   },
   {
     title: 'Projects',
-    link: 'projects'
+    link: '#projects'
   },
   {
     title: 'Contact',
-    link: 'contact'
+    link: '#contact'
   },{
     title: 'My CV',
-    link: 'cv'
+    link: '#cv'
   }
 ]
 </script>
 
 <template>
-  <header class="flex h-[70px] justify-around items-center w-[80%]">
+  <header class="fixed flex h-[70px] justify-around items-center w-[89%] bg-white z-10 ">
     <RouterLink to="/"><div class="font-bold text-[30px] hover:text-oranged text-blue ">Aochol</div></RouterLink>
     <nav class="flex gap-6">
       <ul v-for="menu in menus" :key="menu" class="flex">
-        <RouterLink :to="menu.link">
+        <a :href="menu.link">
           <li class="flex font-bold text-lg hover:text-oranged">
             {{ menu.title }}
           </li>
-        </RouterLink>
+        </a>
       </ul>
     </nav>
   </header>

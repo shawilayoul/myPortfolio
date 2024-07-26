@@ -2,7 +2,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <main class="w-[80%] m-auto flex flex-col items-center gap-6 h-[80vh] mt-2">
+  <main class="w-[80%] m-auto flex flex-col items-center justify-center  gap-6 h-[100vh] mt-2 transition delay-3000 duration-3000 ">
     <div class="top flex flex-col items-center">
       <h2 class="font-bold text-[25px]">Skills</h2>
       <p>My Technical skills</p>
