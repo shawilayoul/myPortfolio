@@ -1,9 +1,73 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script lang="ts" setup></script>
+<script setup>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onBeforeUnmount, onMounted, ref } from 'vue';
+gsap.registerPlugin(ScrollTrigger)
+
+
+const scrollContainer = ref(null);
+
+const handleScroll = () => {
+  const sections = scrollContainer.value.querySelectorAll('.section');
+  const title  = scrollContainer.value.querySelector('.title ');
+  const rect = title.getBoundingClientRect();
+  if (rect.top < window.innerHeight && rect.bottom > 0) {
+  gsap.fromTo(
+    title,
+    {
+      letterSpacing: '10px',
+      opacity: 0,
+      x: 300,
+      skewX: 65
+    },
+    {
+      letterSpacing: '0',
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      delay: 0.3,
+      skewX: 0,
+      scrollTrigger: title ,
+    })}
+    // animating skinss section
+  sections.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      gsap.fromTo(
+      section,
+      {
+        opacity: 0,
+        width: '0%'
+      },
+      {
+        opacity: 1,
+        width: '100%',
+        duration: 1,
+        delay: .3,
+    
+      }
+    )
+    } 
+  });
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // Initial call to animate sections on load.
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+
+</script>
 
 <template>
-  <main class="w-[80%] m-auto flex flex-col items-center justify-center  gap-6 h-[100vh] mt-2 transition delay-3000 duration-3000 ">
-    <div class="top flex flex-col items-center">
+  <main
+    class="w-[80%] m-auto flex flex-col items-center justify-center gap-6 h-[100vh] mt-2 transition delay-3000 duration-3000" ref="scrollContainer"
+  >
+    <div class="title top flex flex-col items-center">
       <h2 class="font-bold text-[25px]">Skills</h2>
       <p>My Technical skills</p>
     </div>
@@ -15,8 +79,8 @@
             <p>HTML</p>
             <p>95%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[95%] bg-oranged h-3 rounded-full"></div>
+          <div class=" section item w-[100%] bg-gray rounded-full" >
+            <div  class=" line w-[95%] bg-oranged h-3 rounded-full" > </div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -24,8 +88,8 @@
             <p>CSS (sass,tailwind, style component)</p>
             <p>90%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[90%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class=" line w-[90%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -33,8 +97,8 @@
             <p>javascript</p>
             <p>85%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[85%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[85%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -42,8 +106,8 @@
             <p>ReactJs</p>
             <p>80%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[80%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[80%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -51,8 +115,8 @@
             <p>VueJs</p>
             <p>60%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[60%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[60%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -60,8 +124,8 @@
             <p>WordPress</p>
             <p>70%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[70%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[70%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
       </div>
@@ -72,8 +136,8 @@
             <p>PHP</p>
             <p>65%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[65%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[65%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -81,8 +145,8 @@
             <p>Symfony</p>
             <p>60%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[60%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[60%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -90,8 +154,8 @@
             <p>MYSQL</p>
             <p>70%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[70%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[70%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -99,8 +163,8 @@
             <p>NodeJs</p>
             <p>80%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[80%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[80%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -108,8 +172,8 @@
             <p>Express</p>
             <p>75%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[75%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[75%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
         <div class="skills mb-5">
@@ -117,8 +181,8 @@
             <p>SQL</p>
             <p>70%</p>
           </div>
-          <div class="item w-[100%] bg-gray rounded-full">
-            <div class="line w-[70%] bg-oranged h-3 rounded-full"></div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[70%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
           </div>
         </div>
       </div>

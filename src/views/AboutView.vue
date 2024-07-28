@@ -1,11 +1,80 @@
-<script lang="ts" setup>
+<script setup>
 import { image } from '@/assets/images'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
+gsap.registerPlugin(ScrollTrigger)
+
+const scrollContainer = ref(null)
+
+const handleScroll = () => {
+  const sections = scrollContainer.value.querySelectorAll('.section')
+  const pSection = scrollContainer.value.querySelector('p')
+
+  // animating p sections
+
+  const rect = pSection.getBoundingClientRect()
+  if (rect.top < window.innerHeight && rect.bottom > 0) {
+    gsap.fromTo(
+      pSection,
+      {
+        opacity: 0,
+        x: 150,
+        skewX: 30
+      },
+      {
+        opacity: 1,
+        x: 0,
+        skewX: 0,
+        duration: 1,
+        delay: 0.3,
+        scrollTrigger: pSection
+      }
+    )
+  }
+  sections.forEach((section) => {
+    const rect = section.getBoundingClientRect()
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      gsap.fromTo(
+        section,
+        {
+          letterSpacing: '10px',
+          opacity: 0,
+          x: 300,
+          skewX: 65
+        },
+        {
+          letterSpacing: '0',
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          delay: 0.3,
+          skewX: 0,
+          scrollTrigger: section
+        }
+      )
+    }
+  })
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+  handleScroll() // Initial call to animate sections on load.
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
-  <main class="flex items-center w-[80%] m-auto h-[100vh] gap-10 transition delay-3000 duration-3000 ">
+  <main
+    class="flex items-center w-[80%] m-auto h-[100vh] gap-10 transition delay-3000 duration-3000"
+    ref="scrollContainer"
+  >
     <div class="flex flex-col flex-1 gap-10 w-[100%]">
-      <h2 class="text-[30px] font-bold">About Me</h2>
+      <h2 class="section text-[30px] font-bold">About Me</h2>
+
       <p>
         I Am Aochol Ayoul, 28 years old, I currently live in Lyon, France. Following a period of
         self-training(Udemy), followed by two training courses at Simplon, Lyon, I acquired
@@ -21,7 +90,9 @@ import { image } from '@/assets/images'
         <i class="pi pi-instagram text-oranged" style="font-size: 2rem"></i>
         <i class="pi pi-twitter text-blue" style="font-size: 2rem"></i>
       </div>
-      <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">Download CV</button>
+      <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">
+        Download CV
+      </button>
     </div>
     <div class="imgContainer">
       <div class="icon">
@@ -56,6 +127,16 @@ import { image } from '@/assets/images'
   background: linear-gradient(to right, #021b79, #0575e6);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
+}
+.hombtn:hover {
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+  animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
 }
 .imgContainer {
   position: relative;
@@ -115,7 +196,7 @@ import { image } from '@/assets/images'
   z-index: 1;
   animation: animate-01 5s linear infinite;
 }
-.content::after{
+.content::after {
   position: absolute;
   content: '';
   inset: 120px;
@@ -127,30 +208,26 @@ import { image } from '@/assets/images'
   animation: animate-02 5s linear infinite;
 }
 
-
-@keyframes animate-01{
-  0%{
+@keyframes animate-01 {
+  0% {
     rotate: 0deg;
   }
-  100%{
-    rotate:  360deg;
+  100% {
+    rotate: 360deg;
   }
 }
-@keyframes animate-02{
-  100%{
+@keyframes animate-02 {
+  100% {
     rotate: 0deg;
   }
-  0%{
-    rotate:  360deg;
+  0% {
+    rotate: 360deg;
   }
 }
 
-@keyframes fade-in{
- 
-  to{
+@keyframes fade-in {
+  to {
     scale: 1;
-
   }
 }
-
 </style>
