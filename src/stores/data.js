@@ -81,7 +81,7 @@ export const useDataStore = defineStore('data', {
         title: '  Programme de fondation Apple, Développement mobile iOS Simplon, Lyon',
         duration: 'Du 11/2023 au 12/2023',
         description:
-          ' Acquérir des connaissance de l’UX design, les bases du langage de programmation Swift, la conception d’une interface d’application mobile, création d’une application iOS.'
+          ' Acquérir des connaissance de l’UX design, les bases du langage de programmation Swift, création d’une application iOS.'
       },
       {
         id: 3,

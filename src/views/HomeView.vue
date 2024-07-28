@@ -62,26 +62,31 @@ onBeforeUnmount(() => {
         <i class="pi pi-instagram text-oranged" style="font-size: 2rem"></i>
         <i class="pi pi-twitter text-blue" style="font-size: 2rem"></i>
       </div>
-      <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">
-        See My Work
-      </button>
+      <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">See My Work</button>
     </div>
     <div
       class="right flex items-center justify-center h-[95vh] w-[40%] rounded-tl-[300%] rounded-bl-[100%]"
     >
-      <img src="../assets/images/aocholProfile.png" alt="" class="img" />
+      <div class="imgContainer">
+        <img src="../assets/images/aocholProfile.png" alt="" class="img" />
+      </div>
     </div>
   </main>
 </template>
 <style scoped>
 .right {
-  background: #8e2de2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100% 100%;
+  background-position:
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px;
+  background-image: repeating-linear-gradient(315deg, #00ffff2e 92%, #073aff00 100%),
+    repeating-radial-gradient(75% 75% at 238% 218%, #00ffff12 30%, #073aff14 39%),
+    radial-gradient(99% 99% at 109% 2%, #00c9ffff 0%, #073aff00 100%),
+    radial-gradient(99% 99% at 21% 78%, #7b00ffff 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, #2000ffff 0%, #073affff 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .img {
   animation: float 4s ease-in-out infinite;
@@ -98,20 +103,29 @@ onBeforeUnmount(() => {
   }
 }
 .hombtn {
-  background: #0575e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #021b79, #0575e6); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #021b79, #0575e6);
+  background-size: 100% 100%;
+  background-position:
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px;
+  background-image: repeating-linear-gradient(315deg, #00ffff2e 92%, #073aff00 100%),
+    repeating-radial-gradient(75% 75% at 238% 218%, #00ffff12 30%, #073aff14 39%),
+    radial-gradient(99% 99% at 109% 2%, #00c9ffff 0%, #073aff00 100%),
+    radial-gradient(99% 99% at 21% 78%, #7b00ffff 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, #2000ffff 0%, #073affff 100%);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
-.hombtn:hover{
+.hombtn:hover {
   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
-  animation:slidebg 2s linear infinite;
+  animation: slidebg 2s linear infinite;
 }
 
 @keyframes slidebg {
   to {
-    background-position:20vw;
+    background-position: 20vw;
   }
 }
 </style>

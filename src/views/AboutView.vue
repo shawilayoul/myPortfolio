@@ -10,7 +10,27 @@ const scrollContainer = ref(null)
 const handleScroll = () => {
   const sections = scrollContainer.value.querySelectorAll('.section')
   const pSection = scrollContainer.value.querySelector('p')
-
+  const imgContainer = scrollContainer.value.querySelector('.imgContainer')
+  // animating image container
+  const imgrect = imgContainer.getBoundingClientRect()
+  if (imgrect.top < window.innerHeight && imgrect.bottom > 0) {
+    gsap.fromTo(
+      imgContainer,
+      {
+        opacity: 0,
+        rotation: 350,
+        scale: 0.2
+      },
+      {
+        opacity: 1,
+        rotation: 0,
+        scale: 1,
+        duration: 1,
+        delay: 1,
+        scrollTrigger: imgContainer
+      }
+    )
+  }
   // animating p sections
 
   const rect = pSection.getBoundingClientRect()
@@ -90,9 +110,7 @@ onBeforeUnmount(() => {
         <i class="pi pi-instagram text-oranged" style="font-size: 2rem"></i>
         <i class="pi pi-twitter text-blue" style="font-size: 2rem"></i>
       </div>
-      <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">
-        Download CV
-      </button>
+      <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">Download CV</button>
     </div>
     <div class="imgContainer">
       <div class="icon">
@@ -122,10 +140,22 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .hombtn {
-  background: #0575e6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #021b79, #0575e6); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #021b79, #0575e6);
+  /*
+  background: -webkit-linear-gradient(to right, #021b79, #0575e6); 
+  background: linear-gradient(to right, #021b79, #0575e6);*/
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100% 100%;
+  background-position:
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px,
+    0px 0px;
+  background-image: repeating-linear-gradient(315deg, #00ffff2e 92%, #073aff00 100%),
+    repeating-radial-gradient(75% 75% at 238% 218%, #00ffff12 30%, #073aff14 39%),
+    radial-gradient(99% 99% at 109% 2%, #00c9ffff 0%, #073aff00 100%),
+    radial-gradient(99% 99% at 21% 78%, #7b00ffff 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, #2000ffff 0%, #073affff 100%);
   color: white;
 }
 .hombtn:hover {
