@@ -56,13 +56,19 @@ onBeforeUnmount(() => {
 
         <p class="text-[35px]">Junior web developer</p>
       </div>
-      <div class="flex gap-12">
-        <i class="pi pi-github text-oranged" style="font-size: 2rem"></i>
-        <i class="pi pi-linkedin text-blue" style="font-size: 2rem"></i>
+      <div class="flex gap-12 cursor-pointer">
+        <a href="https://github.com/shawilayoul">
+          <i class="pi pi-github text-oranged" style="font-size: 2rem"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/aochol-ayoul-mojowok-654a7121a">
+          <i class="pi pi-linkedin text-blue" style="font-size: 2rem"></i
+        ></a>
         <i class="pi pi-instagram text-oranged" style="font-size: 2rem"></i>
         <i class="pi pi-twitter text-blue" style="font-size: 2rem"></i>
       </div>
-      <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">See My Work</button>
+      <a href="#projects">
+        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">See My Work</button></a
+      >
     </div>
     <div
       class="right flex items-center justify-center h-[95vh] w-[40%] rounded-tl-[300%] rounded-bl-[100%]"

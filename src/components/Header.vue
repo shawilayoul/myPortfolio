@@ -1,6 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
-import { RouterLink } from 'vue-router'
 
 const menus = [
   {
@@ -28,19 +27,15 @@ const menus = [
     title: 'Contact',
     link: '#contact'
   },
-  {
-    title: 'My CV',
-    link: '#cv'
-  }
 ]
 </script>
 
 <template>
   <header class="fixed flex h-[70px] justify-around items-center w-[100%] bg-white z-10">
-    <RouterLink to="/"
+    <a href="#home"
       ><div class="logo font-bold text-[25px] hover:text-oranged text-blue mr-20">
         <h2><span class="text-oranged">A</span>ochol</h2>
-      </div></RouterLink
+      </div></a
     >
     <nav class="flex gap-6">
       <ul v-for="menu in menus" :key="menu" class="flex">

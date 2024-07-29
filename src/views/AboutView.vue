@@ -3,6 +3,7 @@ import { image } from '@/assets/images'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
+import cv from '../assets/images/AocholAyoulCv.pdf'
 gsap.registerPlugin(ScrollTrigger)
 
 const scrollContainer = ref(null)
@@ -104,13 +105,19 @@ onBeforeUnmount(() => {
         me to develop essential qualities such as teamwork, a sense of rigour, patience and a strong
         taste for problem solving.
       </p>
-      <div class="social flex gap-12">
-        <i class="pi pi-github text-oranged" style="font-size: 2rem"></i>
-        <i class="pi pi-linkedin text-blue" style="font-size: 2rem"></i>
+      <div class="social flex gap-12 cursor-pointer">
+        <a href="https://github.com/shawilayoul">
+          <i class="pi pi-github text-oranged" style="font-size: 2rem"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/aochol-ayoul-mojowok-654a7121a">
+          <i class="pi pi-linkedin text-blue" style="font-size: 2rem"></i
+        ></a>
         <i class="pi pi-instagram text-oranged" style="font-size: 2rem"></i>
         <i class="pi pi-twitter text-blue" style="font-size: 2rem"></i>
       </div>
-      <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">Download CV</button>
+      <a download="" :href="cv">
+        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">Download CV</button></a
+      >
     </div>
     <div class="imgContainer">
       <div class="icon">

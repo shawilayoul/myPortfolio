@@ -7,7 +7,6 @@ import AboutView from './views/AboutView.vue'
 import HomeView from './views/HomeView.vue'
 import EducationView from './views/EducationView.vue'
 import ProjectsView from './views/ProjectsView.vue'
-import CvView from './views/CvView.vue'
 import ContactView from './views/ContactView.vue'
 </script>
 
@@ -21,8 +20,7 @@ import ContactView from './views/ContactView.vue'
   <div id="about"><AboutView /></div>
   <div id="skill"><SkillsView /></div>
   <div id="education"><EducationView /></div>
-  <div id="project"><ProjectsView /></div>
-  <div id="cv"><CvView/> </div>
+  <div id="projects"><ProjectsView /></div>
   <div id="contact"><ContactView /></div>
 
   <footer>
