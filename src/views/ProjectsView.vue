@@ -1,10 +1,49 @@
-<script setup></script>
+<script setup>
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { onBeforeUnmount, onMounted, ref } from 'vue';
+gsap.registerPlugin(ScrollTrigger)
+
+
+const scrollContainer = ref(null);
+
+const handleScroll = () => {
+  const title  = scrollContainer.value.querySelector('.title ');
+  const rect = title.getBoundingClientRect();
+  if (rect.top < window.innerHeight && rect.bottom > 0) {
+  gsap.fromTo(
+    title,
+    {
+      letterSpacing: '10px',
+      opacity: 0,
+      x: 300,
+      skewX: 65
+    },
+    {
+      letterSpacing: '0',
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      delay: 0.3,
+      skewX: 0,
+      scrollTrigger: title ,
+    })}}
+
+    onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // Initial call to animate sections on load.
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+</script>
 
 <template>
-  <main class="">
+  <main class="" ref="scrollContainer">
     <div class="projectContainer h-[100vh] flex flex-col justify-center gap-10">
       <div class="title">
-        <h2 class="font-bold text-[25px] text-center">My projects</h2>
+        <h2 class="title font-bold text-[25px] text-center">My projects</h2>
       </div>
       <div class="imgCon flex items-center">
         <div class="container">

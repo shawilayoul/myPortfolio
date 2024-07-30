@@ -102,6 +102,7 @@ onBeforeUnmount(() => {
 .blog:hover {
   background: white;
   cursor: pointer;
+  transition: all 2s ease-in-out;
   color: black;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }

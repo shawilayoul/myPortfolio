@@ -169,7 +169,7 @@ onBeforeUnmount(() => {
   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
   animation: slidebg 2s linear infinite;
 }
-
+/***button animation */
 @keyframes slidebg {
   to {
     background-position: 20vw;

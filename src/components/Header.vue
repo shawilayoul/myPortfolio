@@ -1,6 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
-
 const menus = [
   {
     title: 'Home',
@@ -26,7 +25,7 @@ const menus = [
   {
     title: 'Contact',
     link: '#contact'
-  },
+  }
 ]
 </script>
 
@@ -50,6 +49,9 @@ const menus = [
 </template>
 
 <style scoped>
+header {
+  box-shadow: 0px 15px 10px -15px gray
+}
 li {
   display: block;
   height: 100%;
