@@ -93,8 +93,8 @@ onBeforeUnmount(() => {
     class="flex items-center w-[80%] m-auto h-[100vh] gap-10 transition delay-3000 duration-3000"
     ref="scrollContainer"
   >
-    <div class="flex flex-col flex-1 gap-10 w-[100%]">
-      <h2 class="section text-[30px] font-bold">About Me</h2>
+    <div class="flex flex-col flex-1 desktop:gap-10 w-[100%] mobile:gap-6">
+      <h2 class="section desktop:text-[30px] font-bold mobile:text-[20px]">About Me</h2>
 
       <p>
         I Am Aochol Ayoul, 28 years old, I currently live in Lyon, France. Following a period of
@@ -105,21 +105,21 @@ onBeforeUnmount(() => {
         me to develop essential qualities such as teamwork, a sense of rigour, patience and a strong
         taste for problem solving.
       </p>
-      <div class="social flex gap-12 cursor-pointer">
+      <div class="flex gap-12 cursor-pointer">
         <a href="https://github.com/shawilayoul">
-          <i class="pi pi-github text-oranged" style="font-size: 2rem"></i
+          <i class="pi pi-github text-oranged desktop:text-[2rem] mobile:text-[1.5rem]"></i
         ></a>
         <a href="https://www.linkedin.com/in/aochol-ayoul-mojowok-654a7121a">
-          <i class="pi pi-linkedin text-blue" style="font-size: 2rem"></i
+          <i class="pi pi-linkedin text-blue desktop:text-[2rem] mobile:text-[1.5rem]"></i
         ></a>
-        <i class="pi pi-instagram text-oranged" style="font-size: 2rem"></i>
-        <i class="pi pi-twitter text-blue" style="font-size: 2rem"></i>
+        <i class="pi pi-instagram text-oranged desktop:text-[2rem] mobile:text-[1.5rem]"></i>
+        <i class="pi pi-twitter text-blue desktop:text-[2rem] mobile:text-[1.5rem]"></i>
       </div>
       <a download="" :href="cv">
         <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">Download CV</button></a
       >
     </div>
-    <div class="imgContainer">
+    <div class="imgContainer desktop:block mobile:hidden">
       <div class="icon">
         <div class="imgbg" style="--i: 1">
           <img :src="image.html" alt="" />

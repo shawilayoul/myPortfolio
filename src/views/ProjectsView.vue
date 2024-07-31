@@ -1,51 +1,59 @@
 <script setup>
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { onBeforeUnmount, onMounted, ref } from 'vue';
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 gsap.registerPlugin(ScrollTrigger)
 
-
-const scrollContainer = ref(null);
+const scrollContainer = ref(null)
 
 const handleScroll = () => {
-  const title  = scrollContainer.value.querySelector('.title ');
-  const rect = title.getBoundingClientRect();
+  const title = scrollContainer.value.querySelector('.title ')
+  const rect = title.getBoundingClientRect()
   if (rect.top < window.innerHeight && rect.bottom > 0) {
-  gsap.fromTo(
-    title,
-    {
-      letterSpacing: '10px',
-      opacity: 0,
-      x: 300,
-      skewX: 65
-    },
-    {
-      letterSpacing: '0',
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      delay: 0.3,
-      skewX: 0,
-      scrollTrigger: title ,
-    })}}
+    gsap.fromTo(
+      title,
+      {
+        letterSpacing: '10px',
+        opacity: 0,
+        x: 300,
+        skewX: 65
+      },
+      {
+        letterSpacing: '0',
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        delay: 0.3,
+        skewX: 0,
+        scrollTrigger: title
+      }
+    )
+  }
+}
 
-    onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-  handleScroll(); // Initial call to animate sections on load.
-});
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+  handleScroll() // Initial call to animate sections on load.
+})
 
 onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll);
-});
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
   <main class="" ref="scrollContainer">
-    <div class="projectContainer h-[100vh] flex flex-col justify-center gap-10">
+    <div
+      class="projectContainer desktop:h-[100vh] desktop:w-[100%] mobile:w-[80%] m-auto flex flex-col justify-center gap-10 mobile:mb-10"
+    >
       <div class="title">
-        <h2 class="title font-bold text-[25px] text-center">My projects</h2>
+        <h2 class="title font-bold desktop:text-[25px] text-center mobile:text-[20px]">
+          My projects
+        </h2>
       </div>
-      <div class="imgCon flex items-center">
+      <div
+        class="imgCon desktop:flex desktop:flex-row items-center desktop:gap-0 mobile:flex mobile:flex-col gap-10"
+      >
         <div class="container">
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
@@ -111,42 +119,44 @@ onBeforeUnmount(() => {
           </div>
         </div>
       </div>
-      <div class="ipad">
-        <div class="screen">
-          <img
-            src="../assets/images/cakeHom.png"
-            alt="Image inside iPad"
-            class="ipad-image"
-          />
+      <div class="mobil-ipad  desktop:block mobile:hidden !important">
+        <div class="ipad">
+          <div class="screen">
+            <img src="../assets/images/cakeHom.png" alt="Image inside iPad" class="ipad-image" />
+          </div>
         </div>
-      </div>
-      <div class="ipad2">
-        <div class="screen">
-          <img src="../assets/images/sliverspoonhome.png" alt="Image inside iPad" class="ipad-image" />
+        <div class="ipad2">
+          <div class="screen">
+            <img
+              src="../assets/images/sliverspoonhome.png"
+              alt="Image inside iPad"
+              class="ipad-image"
+            />
+          </div>
         </div>
-      </div>
-      <div class="ipad3">
-        <div class="screen">
-          <img src="../assets/images/Nike1.png" alt="Image inside iPad" class="ipad-image" />
+        <div class="ipad3">
+          <div class="screen">
+            <img src="../assets/images/Nike1.png" alt="Image inside iPad" class="ipad-image" />
+          </div>
         </div>
-      </div>
-      <div class="phone1">
-        <div class="screen">
-          <img
-            src="../assets/images/cakeHom.png"
-            alt="Image inside iPad"
-            class="ipad-image"
-          />
+        <div class="phone1">
+          <div class="screen">
+            <img src="../assets/images/cakeHom.png" alt="Image inside iPad" class="ipad-image" />
+          </div>
         </div>
-      </div>
-      <div class="phone2">
-        <div class="screen">
-          <img src="../assets/images/sliverspoonhome.png" alt="Image inside iPad" class="ipad-image" />
+        <div class="phone2">
+          <div class="screen">
+            <img
+              src="../assets/images/sliverspoonhome.png"
+              alt="Image inside iPad"
+              class="ipad-image"
+            />
+          </div>
         </div>
-      </div>
-      <div class="phone3">
-        <div class="screen">
-          <img src="../assets/images/Nike1.PNG" alt="Image inside iPad" class="ipad-image" />
+        <div class="phone3">
+          <div class="screen">
+            <img src="../assets/images/Nike1.PNG" alt="Image inside iPad" class="ipad-image" />
+          </div>
         </div>
       </div>
     </div>

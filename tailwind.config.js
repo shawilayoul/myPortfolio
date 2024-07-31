@@ -3,6 +3,16 @@ export default {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   content: [],
   theme: {
+    screens: {
+      'mobile': '400px',
+      // => @media (min-width: 640px) { ... }
+
+      'tablate': '700px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '900px',
+      // => @media (min-width: 1280px) { ... }
+    },
     colors:{
      blue: "#4a00e0",
      oranged:"#ff5400",
@@ -11,6 +21,7 @@ export default {
      gray:"#e5e5e5",
      darkBlue:"#1d3557"
     },
+    
     extend: {},
   },
   plugins: [],

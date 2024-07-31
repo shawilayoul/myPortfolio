@@ -47,14 +47,14 @@ onBeforeUnmount(() => {
 
 <template>
   <main
-    class="w-[80%] m-auto flex items-center justify-center flex-col gap-5 z-1 h-[100vh]"
+    class="w-[80%] m-auto desktop:h-[100vh] flex items-center justify-center flex-col gap-5 z-1 mb-10"
     ref="scrollContainer"
   >
     <div class="top">
-      <h2 class="title font-bold text-[25px] mb-5">My Resume</h2>
+      <h2 class="title font-bold desktop:text-[25px] mobile:text-[20px]">My Resume</h2>
     </div>
-    <div class="bottom flex gap-10 w-full">
-      <div class="left flex flex-col gap-2 w-[50%]">
+    <div class="bottom desktop:flex gap-10 w-full mobile:gap-5">
+      <div class="left flex flex-col gap-4 mb-5 desktop:w-[50%]">
         <div
           class="blog flex flex-col gap-2 p-4 shadow-lg shadow-cyan-500/50 rounded-lg"
           v-for="education in store.educationLeft"
@@ -66,7 +66,7 @@ onBeforeUnmount(() => {
         </div>
       </div>
 
-      <div class="right flex flex-col gap-2 w-[50%]">
+      <div class="right flex flex-col gap-4 desktop:w-[50%]">
         <div
           class="blog flex flex-col gap-2 p-4 shadow-lg shadow-cyan-500/50 rounded-lg"
           v-for="education in store.educationRight"
@@ -96,7 +96,6 @@ onBeforeUnmount(() => {
     radial-gradient(99% 99% at 21% 78%, #7b00ffff 0%, #073aff00 100%),
     radial-gradient(160% 154% at 711px -303px, #2000ffff 0%, #073affff 100%);
   color: white;
-  height: 160px;
   animation: float 4s ease-in-out infinite;
 }
 .blog:hover {

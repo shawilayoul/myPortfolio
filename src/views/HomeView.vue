@@ -50,21 +50,21 @@ onBeforeUnmount(() => {
   >
     <div class="left ml-[10%] flex flex-col items-start justify-center gap-12">
       <div class="section">
-        <h3 class="text-lg">HEY THERE!</h3>
+        <h3 class="desktop:text-lg mobile:text-sm">HEY THERE!</h3>
 
-        <h1 class="text-[40px] font-bold my-2">I AM AOCHOL AYOUL</h1>
+        <h1 class="desktop:text-[40px] font-bold my-2 mobile:text-[20px]">I AM AOCHOL AYOUL</h1>
 
-        <p class="text-[35px]">Junior web developer</p>
+        <p class="desktop:text-[35px] mobile:text-[18px]">Junior web developer</p>
       </div>
       <div class="flex gap-12 cursor-pointer">
         <a href="https://github.com/shawilayoul">
-          <i class="pi pi-github text-oranged" style="font-size: 2rem"></i
+          <i class="pi pi-github text-oranged desktop:text-[2rem] mobile:text-[1.5rem]"></i
         ></a>
         <a href="https://www.linkedin.com/in/aochol-ayoul-mojowok-654a7121a">
-          <i class="pi pi-linkedin text-blue" style="font-size: 2rem"></i
+          <i class="pi pi-linkedin text-blue desktop:text-[2rem] mobile:text-[1.5rem]"></i
         ></a>
-        <i class="pi pi-instagram text-oranged" style="font-size: 2rem"></i>
-        <i class="pi pi-twitter text-blue" style="font-size: 2rem"></i>
+        <i class="pi pi-instagram text-oranged desktop:text-[2rem] mobile:text-[1.5rem]"></i>
+        <i class="pi pi-twitter text-blue desktop:text-[2rem] mobile:text-[1.5rem]"></i>
       </div>
       <a href="#projects">
         <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">See My Work</button></a

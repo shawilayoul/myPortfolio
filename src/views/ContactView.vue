@@ -76,41 +76,41 @@ const sendEmail = () => {
 </script>
 
 <template>
-  <main class="w-[60%] m-auto h-[100vh] flex flex-col gap-10 justify-center" ref="scrollContainer">
+  <main class="desktop:w-[60%] mobile:w-[80%] m-auto  desktop:h-[100vh] flex flex-col desktop:gap-10 mobile:gap-5 justify-center" ref="scrollContainer">
     <div class="top">
       <h3 class="title text-center text-[23px] font-bold">Get in touch</h3>
     </div>
-    <div class="bottom flex gap-10 justify-between w-full">
+    <div class="bottom desktop:flex-row gap-10 justify-between w-full mobile:flex flex-col mobile:gap-10">
       <div
-        class="left bg-white shadow-lg shadow-black p-2 rounded w-[50%] flex flex-col gap-8 items-center"
+        class="left bg-white shadow-lg shadow-gray p-2 rounded desktop:w-[50%] flex flex-col desktop:gap-8 items-center mobile:gap-4"
       >
         <h3 class="font-bold">Talk to me</h3>
         <div
-          class="box flex flex-col gap-2 items-center border p-2 rounded w-[250px] cursor-pointer"
+          class="box flex flex-col desktop:gap-2 mobile:gap-1 items-center border p-2 rounded w-[250px] cursor-pointer"
         >
           <i class="pi pi-envelope text-oranged"></i>
           <p>aocholayoul9@gmail.com</p>
           <p>Email me</p>
         </div>
         <div
-          class="box flex flex-col gap-2 items-center border p-2 rounded w-[250px] cursor-pointer"
+          class="box flex flex-col desktop:gap-2 mobile:gap-1  items-center border p-2 rounded w-[250px] cursor-pointer"
         >
           <i class="pi pi-facebook text-blue"></i>
           <p>Facebook</p>
           <p>Write me</p>
         </div>
         <div
-          class="box flex flex-col gap-2 items-center border p-2 rounded w-[250px] cursor-pointer"
+          class="box flex flex-col desktop:gap-2 mobile:gap-1  items-center border p-2 rounded w-[250px] cursor-pointer"
         >
           <i class="pi pi-phone text-oranged"></i>
           <p>+337 82 37 11 77</p>
           <p>Call me</p>
         </div>
       </div>
-      <div class="right bg-white shadow-lg shadow-black p-2 rounded w-[50%] flex flex-col gap-8">
+      <div class="right bg-white shadow-lg shadow-gray p-2 rounded desktop:w-[50%] flex flex-col gap-8">
         <h3 class="font-bold text-center">Write me a message</h3>
-        <form @submit.prevent="sendEmail" ref="emailForm" class="flex flex-col gap-6">
-          <div class="textInput border rounded mb-2">
+        <form @submit.prevent="sendEmail" ref="emailForm" class="flex flex-col desktop:gap-6 mobile:gap-3">
+          <div class="textInput border rounded desktop:mb-2">
             <input
               type="text"
               name="user_name"
@@ -120,7 +120,7 @@ const sendEmail = () => {
               required
             />
           </div>
-          <div class="textInput border rounded mb-2">
+          <div class="textInput border rounded desktop:mb-2">
             <input
               type="text"
               name="user_email"
@@ -130,7 +130,7 @@ const sendEmail = () => {
               class="w-full p-1"
             />
           </div>
-          <div class="textInput border rounded mb-2">
+          <div class="textInput border rounded desktop:mb-2">
             <input
               type="text"
               name="user_subject"
