@@ -137,6 +137,8 @@ export const useDataStore = defineStore('data', {
         name: 'Project Two',
         description: 'A mobile app for tracking fitness activities.'
       }
-    ]
+    ],
+     AboutDescriptionData :
+  "Hello! I'm Aochol, a passionate web development student at AFPA with a keen interest in creating dynamic and responsive websites. Currently pursuing a Bac+2 Degree,  in web and mobile development  with a focus on front-end and back-end development, I am eager to apply my knowledge and skills in a real-world setting through an internship opportunity.I have developed a strong foundation in web technologies such as HTML, CSS, JavaScript, and frameworks like React and Vue.js. I am also proficient in back-end development with Node.js and Express, and have experience working with databases like MongoDB and SQL. My coursework and projects have equipped me with a solid understanding of responsive design principles, user interface development, and web accessibility.In addition to my technical skills, I am a problem solver at heart and enjoy tackling challenges that require creative thinking and innovation. I am committed to continuous learning and staying up-to-date with the latest industry trends and best practices in web development.I am actively seeking an internship where I can contribute to exciting projects, collaborate with talented teams, and gain valuable hands-on experience. I am enthusiastic about the opportunity to further develop my skills and make a meaningful impact in the world of web development.Thank you for taking the time to learn more about me. I look forward to the possibility of contributing to your team and learning from experienced professionals in the field."
   })
 })

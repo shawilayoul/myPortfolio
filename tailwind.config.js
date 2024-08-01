@@ -4,10 +4,10 @@ export default {
   content: [],
   theme: {
     screens: {
-      'mobile': '400px',
+      'mobile': '200px',
       // => @media (min-width: 640px) { ... }
 
-      'tablate': '700px',
+      'tablate': '600px',
       // => @media (min-width: 1024px) { ... }
 
       'desktop': '900px',

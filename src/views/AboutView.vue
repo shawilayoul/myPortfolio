@@ -2,11 +2,29 @@
 import { image } from '@/assets/images'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { useDataStore } from '@/stores/data'
+import { onBeforeUnmount, onMounted, ref, computed } from 'vue'
 import cv from '../assets/images/AocholAyoulCv.pdf'
 gsap.registerPlugin(ScrollTrigger)
 
 const scrollContainer = ref(null)
+
+/**tackling  about me section */
+
+const store = useDataStore()
+const showFullAboutMe = ref(false)
+const truncatedAboutMe = computed(() => {
+  let description = store.AboutDescriptionData 
+  if (!showFullAboutMe.value) {
+    description = store.AboutDescriptionData .substring(0, 790) + '...'
+  }
+  return description
+})
+/**toggling about me description */
+
+const toggleDescription = () => {
+  showFullAboutMe.value = !showFullAboutMe.value
+}
 
 const handleScroll = () => {
   const sections = scrollContainer.value.querySelectorAll('.section')
@@ -90,21 +108,21 @@ onBeforeUnmount(() => {
 
 <template>
   <main
-    class="flex items-center w-[80%] m-auto h-[100vh] gap-10 transition delay-3000 duration-3000"
+    class="flex items-center w-[80%] m-auto desktop:h-[100vh] mb-10 gap-10 transition delay-3000 duration-3000"
     ref="scrollContainer"
   >
-    <div class="flex flex-col flex-1 desktop:gap-10 w-[100%] mobile:gap-6">
+    <div class="flex flex-col flex-1 desktop:gap-5 w-[100%] mobile:gap-6">
       <h2 class="section desktop:text-[30px] font-bold mobile:text-[20px]">About Me</h2>
 
-      <p>
-        I Am Aochol Ayoul, 28 years old, I currently live in Lyon, France. Following a period of
-        self-training(Udemy), followed by two training courses at Simplon, Lyon, I acquired
-        essential skills in the domain of web development. To start a work-study training course as
-        a Full-Stack developer, I am looking for a company that will allow me to put into practice
-        all the lessons that will be given to me. My previous experiences and training have allowed
-        me to develop essential qualities such as teamwork, a sense of rigour, patience and a strong
-        taste for problem solving.
-      </p>
+      <div>
+        <p>{{ truncatedAboutMe }}</p>
+        <button
+          @click="toggleDescription"
+          class="hombtn text-white p-1 px-5 rounded-lg cursor-pointer mt-2"
+        >
+          {{ showFullAboutMe ? 'show less' : 'show more' }}
+        </button>
+      </div>
       <div class="flex gap-12 cursor-pointer">
         <a href="https://github.com/shawilayoul">
           <i class="pi pi-github text-oranged desktop:text-[2rem] mobile:text-[1.5rem]"></i

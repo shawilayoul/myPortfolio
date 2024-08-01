@@ -1,5 +1,12 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
+import { ref } from 'vue'
+
+const showNavBar = ref(true)
+
+const toggleMenu = () => {
+  showNavBar.value = !showNavBar.value
+}
 const menus = [
   {
     title: 'Home',
@@ -31,28 +38,54 @@ const menus = [
 
 <template>
   <header class="fixed flex h-[70px] justify-around items-center w-[100%] bg-white z-10">
-    <a href="#home"
-      ><div class="logo font-bold text-[25px] hover:text-oranged text-blue mr-20">
-        <h2><span class="text-oranged">A</span>ochol</h2>
-      </div></a
-    >
-    <nav class="flex gap-6">
-      <ul v-for="menu in menus" :key="menu" class="flex">
-        <a :href="menu.link">
-          <li class="flex font-bold text-lg hover:text-oranged">
-            {{ menu.title }}
-          </li>
-        </a>
-      </ul>
+    <nav class="relative flex h-[70px] justify-around items-center w-[100%]  bg-white z-10">
+      <a href="#home"
+        ><div class="logo font-bold desktop:text-[25px] hover:text-oranged text-blue desktop:mr-20 mobile:mr-72 mobile:text-[20px]">
+          <h2><span class="text-oranged">A</span>ochol</h2>
+        </div></a
+      >
+      <div class="desktop:flex gap-6 mobile:hidden">
+        <ul v-for="menu in menus" :key="menu" class="flex">
+          <a :href="menu.link">
+            <li class="list flex font-bold text-lg hover:text-oranged">
+              {{ menu.title }}
+            </li>
+          </a>
+        </ul>
+      </div>
+
+      <div
+        v-if="showNavBar"
+        class="mobile:flex absolute flex-col gap-5 py-2 px-4 mt-[350px] w-full bg-gray desktop:hidden"
+      >
+        <ul v-for="menu in menus" :key="menu">
+          <a :href="menu.link">
+            <li class="flex font-bold text-lg hover:text-oranged"  @click="toggleMenu">
+              {{ menu.title }}
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div>
+        <i
+          @click="toggleMenu"
+          class="bar cursor-pointer desktop:hidden absolute"
+          :class="[
+            showNavBar
+              ? 'pi pi-bars mr-5 text-[30px] cursor-pointer '
+              : 'pi pi-times mr-5 text-[30px] cursor-pointer '
+          ]"
+        ></i>
+      </div>
     </nav>
   </header>
 </template>
 
 <style scoped>
 header {
-  box-shadow: 0px 15px 10px -15px gray
+  box-shadow: 0px 15px 10px -15px gray;
 }
-li {
+.list {
   display: block;
   height: 100%;
   position: relative;
@@ -62,15 +95,15 @@ li {
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
   padding: 10px 10px;
 }
-li:after,
-li:before {
+.list:after,
+.list:before {
   content: '';
   position: absolute;
   display: block;
   border: 0px solid transparent;
 }
 
-li:after {
+.list:after {
   width: 0%;
   height: 80%;
   border-top: 2px solid blue;
@@ -78,7 +111,7 @@ li:after {
   transition: all 0.3s ease;
 }
 
-li:before {
+.list:before {
   width: 120%;
   height: 0%;
   border-left: 2px solid blue;
@@ -86,11 +119,11 @@ li:before {
   transition: all 0.5s ease;
 }
 
-li:hover::before {
+.list:hover::before {
   height: 80%;
 }
 
-li:hover::after {
+.list:hover::after {
   width: 120%;
 }
 /**logo style */
@@ -134,5 +167,10 @@ li:hover::after {
 
 .logo:hover::after {
   width: 120%;
+}
+.bar {
+  top: 25%;
+  position: absolute;
+  right: 1%;
 }
 </style>

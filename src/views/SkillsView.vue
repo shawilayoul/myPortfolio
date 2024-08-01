@@ -65,7 +65,7 @@ onBeforeUnmount(() => {
 
 <template>
   <main
-    class="w-[80%] m-auto h-[100vh] flex flex-col items-center justify-center gap-6  mt-2 transition delay-3000 duration-3000 mb-10 mobile:mb-28" ref="scrollContainer"
+    class="w-[80%] m-auto desktop:h-[100vh] flex flex-col items-center justify-center gap-6  mt-2 transition delay-3000 duration-3000 mb-10 mobile:mb-28" ref="scrollContainer"
   >
     <div class="title top flex flex-col items-center">
       <h2 class="font-bold desktop:text-[25px] mobile:text-[20px]">Skills</h2>
