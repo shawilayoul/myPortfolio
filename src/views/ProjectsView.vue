@@ -42,19 +42,19 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <main class="" ref="scrollContainer">
+  <main>
     <div
-      class="projectContainer desktop:h-[100vh] desktop:w-[100%] mobile:w-[80%] m-auto flex flex-col justify-center gap-10 mobile:mb-10"
+      class="projectContainer desktop:h-[100vh] desktop:w-[100%] mobile:w-[80%]  m-auto flex flex-col justify-center gap-10 mobile:mb-10"
     >
       <div class="title">
-        <h2 class="title font-bold desktop:text-[25px] text-center mobile:text-[20px]">
+        <h2 class="font-bold desktop:text-[25px] text-center mobile:text-[20px]">
           My projects
         </h2>
       </div>
       <div
         class="imgCon desktop:flex desktop:flex-row items-center desktop:gap-0 mobile:flex mobile:flex-col gap-10"
       >
-        <div class="container">
+        <div class="container ">
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -181,7 +181,9 @@ onBeforeUnmount(() => {
   border-radius: 8px;
   margin-left: 1rem;
   margin-right: 1rem;
-  padding: 0 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -191,7 +193,7 @@ onBeforeUnmount(() => {
 .laptop {
   position: relative;
   margin: auto;
-  max-width: 23rem;
+  width: 23rem;
   .laptop__screen {
     position: relative;
     z-index: 1;

@@ -46,7 +46,7 @@ onBeforeUnmount(() => {
   <main
     class="w-[100%] flex justify-between transition delay-3000 duration-3000"
     id="home"
-    ref="scrollContainer"
+  
   >
     <div class="left ml-[10%] flex flex-col items-start justify-center gap-12">
       <div class="section">
@@ -71,7 +71,7 @@ onBeforeUnmount(() => {
       >
     </div>
     <div
-      class="right flex items-center justify-center h-[95vh] w-[40%] rounded-tl-[300%] rounded-bl-[100%]"
+      class="right flex items-center justify-center mobile:h-[70vh] desktop:h-[95vh] w-[40%] rounded-tl-[300%] rounded-bl-[100%]"
     >
       <div class="imgContainer">
         <img src="../assets/images/aocholProfile.png" alt="" class="img" />

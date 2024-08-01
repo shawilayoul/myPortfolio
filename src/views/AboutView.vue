@@ -109,16 +109,15 @@ onBeforeUnmount(() => {
 <template>
   <main
     class="flex items-center w-[80%] m-auto desktop:h-[100vh] mb-10 gap-10 transition delay-3000 duration-3000"
-    ref="scrollContainer"
   >
     <div class="flex flex-col flex-1 desktop:gap-5 w-[100%] mobile:gap-6">
-      <h2 class="section desktop:text-[30px] font-bold mobile:text-[20px]">About Me</h2>
+      <h2 class="desktop:text-[30px] font-bold mobile:text-[20px]">About Me</h2>
 
       <div>
         <p>{{ truncatedAboutMe }}</p>
         <button
           @click="toggleDescription"
-          class="hombtn text-white p-1 px-5 rounded-lg cursor-pointer mt-2"
+          class=" text-green p-1  rounded-lg cursor-pointer mt-1"
         >
           {{ showFullAboutMe ? 'show less' : 'show more' }}
         </button>
@@ -134,7 +133,7 @@ onBeforeUnmount(() => {
         <i class="pi pi-twitter text-blue desktop:text-[2rem] mobile:text-[1.5rem]"></i>
       </div>
       <a download="" :href="cv">
-        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">Download CV</button></a
+        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer  mobile:text-[16px]">Download CV</button></a
       >
     </div>
     <div class="imgContainer desktop:block mobile:hidden">

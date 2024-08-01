@@ -19,7 +19,8 @@ export default {
      white:"#ffffff",
      black:"#000",
      gray:"#e5e5e5",
-     darkBlue:"#1d3557"
+     darkBlue:"#1d3557",
+     green:"#70e000"
     },
     
     extend: {},

@@ -37,10 +37,10 @@ const menus = [
 </script>
 
 <template>
-  <header class="fixed flex h-[70px] justify-around items-center w-[100%] bg-white z-10">
-    <nav class="relative flex h-[70px] justify-around items-center w-[100%]  bg-white z-10">
+  <header class="fixed flex h-[70px] justify-evenly items-center w-[100vw] desktop:w-[100%] bg-white z-10">
+    <nav class="relative flex h-[70px] w-[100vw] items-center justify-evenly gap-28 desktop:w-[95%] bg-white z-10">
       <a href="#home"
-        ><div class="logo font-bold desktop:text-[25px] hover:text-oranged text-blue desktop:mr-20 mobile:mr-72 mobile:text-[20px]">
+        ><div class="logo  font-bold desktop:text-[25px] hover:text-oranged text-blue desktop:mr-20 mobile:mr-72 mobile:text-[20px]">
           <h2><span class="text-oranged">A</span>ochol</h2>
         </div></a
       >
