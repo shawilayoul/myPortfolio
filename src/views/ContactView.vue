@@ -76,9 +76,9 @@ const sendEmail = () => {
 </script>
 
 <template>
-  <main class="desktop:w-[60%] mobile:w-[80%] m-auto  desktop:h-[100vh] flex flex-col desktop:gap-10 mobile:gap-5 justify-center" ref="scrollContainer">
+  <main class="desktop:w-[60%] mobile:w-[80%] m-auto  desktop:h-[100vh] flex flex-col desktop:gap-10 mobile:gap-5 justify-center">
     <div class="top">
-      <h3 class="title text-center text-[23px] font-bold">Get in touch</h3>
+      <h3 class="text-center text-[23px] font-bold">Get in touch</h3>
     </div>
     <div class="bottom desktop:flex-row gap-10 justify-between w-full mobile:flex flex-col mobile:gap-10">
       <div

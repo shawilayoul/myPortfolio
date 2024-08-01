@@ -46,7 +46,7 @@ onBeforeUnmount(() => {
     <div
       class="projectContainer desktop:h-[100vh] desktop:w-[100%] mobile:w-[80%]  m-auto flex flex-col justify-center gap-10 mobile:mb-10"
     >
-      <div class="title">
+      <div>
         <h2 class="font-bold desktop:text-[25px] text-center mobile:text-[20px]">
           My projects
         </h2>
@@ -193,7 +193,7 @@ onBeforeUnmount(() => {
 .laptop {
   position: relative;
   margin: auto;
-  width: 23rem;
+  max-width: 23rem;
   .laptop__screen {
     position: relative;
     z-index: 1;
