@@ -2,7 +2,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const showNavBar = ref(true)
+const showNavBar = ref(false)
 
 const toggleMenu = () => {
   showNavBar.value = !showNavBar.value
@@ -72,8 +72,8 @@ const menus = [
           class="bar cursor-pointer desktop:hidden absolute"
           :class="[
             showNavBar
-              ? 'pi pi-bars mr-5 text-[30px] cursor-pointer '
-              : 'pi pi-times mr-5 text-[30px] cursor-pointer '
+              ? 'pi pi-times mr-5 text-[30px] cursor-pointer '
+              : 'pi pi-bars mr-5 text-[30px] cursor-pointer '
           ]"
         ></i>
       </div>
