@@ -110,7 +110,7 @@ onBeforeUnmount(() => {
           </div>
           <div class="laptop">
             <div class="laptop__screen">
-              <img src="../assets/images/Nike1.PNG" width="1600" height="1000" alt="Screen" />
+              <img src="../assets/images/nike1.png" width="1600" height="1000" alt="Screen" />
             </div>
             <div class="laptop__bottom">
               <div class="laptop__under"></div>
@@ -136,7 +136,7 @@ onBeforeUnmount(() => {
         </div>
         <div class="ipad3">
           <div class="screen">
-            <img src="../assets/images/Nike1.png" alt="Image inside iPad" class="ipad-image" />
+            <img src="../assets/images/nike1.png" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
         <div class="phone1">
@@ -155,7 +155,7 @@ onBeforeUnmount(() => {
         </div>
         <div class="phone3">
           <div class="screen">
-            <img src="../assets/images/Nike1.PNG" alt="Image inside iPad" class="ipad-image" />
+            <img src="../assets/images/nike1.png" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
       </div>
