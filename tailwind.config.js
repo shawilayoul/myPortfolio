@@ -4,13 +4,13 @@ export default {
   content: [],
   theme: {
     screens: {
-      'mobile': '200px',
+      'mobile': '100px',
       // => @media (min-width: 640px) { ... }
 
       'tablate': '600px',
       // => @media (min-width: 1024px) { ... }
 
-      'desktop': '900px',
+      'desktop': '1000px',
       // => @media (min-width: 1280px) { ... }
     },
     colors:{

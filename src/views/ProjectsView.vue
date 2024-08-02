@@ -44,15 +44,15 @@ onBeforeUnmount(() => {
 <template>
   <main>
     <div
-      class="projectContainer  desktop:w-[90%]  moblie:w-[80%] m-auto flex  flex-col justify-center gap-10 mobile:mb-10"
+      class="projectContainer desktop:w-[80%] moblie:w-[80%] m-auto flex flex-col justify-center gap-10 mobile:mb-10"
     >
       <div>
         <h2 class="font-bold desktop:text-[25px] text-center mobile:text-[20px]">My projects</h2>
       </div>
       <div
-        class="imgCon desktop:grid grid-cols-3  items-center desktop:gap-10 mobile:flex mobile:flex-col mobile:gap-10"
+        class="imgCon desktop:grid desktop:grid-cols-3 gap-10 mobile:grid mobile:grid-cols-1 moblie:w-[100%] m-auto flex"
       >
-        <div class="container">
+        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -71,13 +71,19 @@ onBeforeUnmount(() => {
             <div class="laptop__shadow"></div>
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged">ReactJs</button>
-            <button class="hover:text-oranged">SASS</button>
-            <button class="hover:text-oranged">MongoDb</button>
-            <button class="hover:text-oranged">TanStack Query</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              ReactJs
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">SASS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              TanStack
+            </button>
           </div>
         </div>
-        <div class="container">
+        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -103,12 +109,14 @@ onBeforeUnmount(() => {
             <div class="laptop__shadow"></div>
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged">wordpress</button>
-            <button class="hover:text-oranged">Figma</button>
-            <button class="hover:text-oranged">CSS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              wordpress
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">Figma</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">CSS</button>
           </div>
         </div>
-        <div class="container">
+        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -127,19 +135,23 @@ onBeforeUnmount(() => {
             <div class="laptop__shadow"></div>
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged">React</button>
-            <button class="hover:text-oranged">MongoDb</button>
-            <button class="hover:text-oranged">CSS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">React</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">CSS</button>
           </div>
         </div>
-        <div class="container">
+        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
             <a href="https://github.com/shawilayoul/aocholprofile" class="hover:text-oranged"
               >github Code</a
             >
-            <a href="https://shawilayoul.github.io/aocholprofile/" class="hover:text-oranged">webSite</a>
+            <a href="https://shawilayoul.github.io/aocholprofile/" class="hover:text-oranged"
+              >webSite</a
+            >
           </div>
           <div class="laptop">
             <div class="laptop__screen">
@@ -151,12 +163,14 @@ onBeforeUnmount(() => {
             <div class="laptop__shadow"></div>
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged">React</button>
-            <button class="hover:text-oranged">MongoDb</button>
-            <button class="hover:text-oranged">SASS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">React</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">SASS</button>
           </div>
         </div>
-        <div class="container">
+        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -175,16 +189,22 @@ onBeforeUnmount(() => {
             <div class="laptop__shadow"></div>
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged">React</button>
-            <button class="hover:text-oranged">MongoDb</button>
-            <button class="hover:text-oranged">CSS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">React</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">CSS</button>
           </div>
         </div>
       </div>
       <div class="mobil-ipad desktop:block mobile:hidden !important">
         <div class="ipad">
           <div class="screen">
-            <img src="../assets/images/cakeTablate.png" alt="Image inside iPad" class="ipad-image" />
+            <img
+              src="../assets/images/cakeTablate.png"
+              alt="Image inside iPad"
+              class="ipad-image"
+            />
           </div>
         </div>
         <div class="ipad2">
@@ -198,7 +218,11 @@ onBeforeUnmount(() => {
         </div>
         <div class="ipad">
           <div class="screen">
-            <img src="../assets/images/cakeTablate.png" alt="Image inside iPad" class="ipad-image" />
+            <img
+              src="../assets/images/cakeTablate.png"
+              alt="Image inside iPad"
+              class="ipad-image"
+            />
           </div>
         </div>
         <div class="ipad2">
@@ -259,7 +283,6 @@ onBeforeUnmount(() => {
   margin-right: 1rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
