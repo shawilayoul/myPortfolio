@@ -4,7 +4,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useDataStore } from '@/stores/data'
 import { onBeforeUnmount, onMounted, ref, computed } from 'vue'
-import cv from '../assets/images/AocholAyoulCv.pdf'
+import cv from '@/assets/AocholAyoulCv .pdf'
 gsap.registerPlugin(ScrollTrigger)
 
 const scrollContainer = ref(null)
