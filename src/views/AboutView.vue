@@ -262,6 +262,11 @@ onBeforeUnmount(() => {
   animation: animate-02 5s linear infinite;
 }
 
+.pi:hover{
+transform: scale(1.4);
+transition: all .5s ease-in-out;
+}
+
 @keyframes animate-01 {
   0% {
     rotate: 0deg;

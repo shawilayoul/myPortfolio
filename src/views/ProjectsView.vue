@@ -44,21 +44,19 @@ onBeforeUnmount(() => {
 <template>
   <main>
     <div
-      class="projectContainer desktop:h-[100vh] desktop:w-[100%] mobile:w-[80%]  m-auto flex flex-col justify-center gap-10 mobile:mb-10"
+      class="projectContainer  desktop:w-[90%]  moblie:w-[80%] m-auto flex  flex-col justify-center gap-10 mobile:mb-10"
     >
       <div>
-        <h2 class="font-bold desktop:text-[25px] text-center mobile:text-[20px]">
-          My projects
-        </h2>
+        <h2 class="font-bold desktop:text-[25px] text-center mobile:text-[20px]">My projects</h2>
       </div>
       <div
-        class="imgCon desktop:flex desktop:flex-row items-center desktop:gap-0 mobile:flex mobile:flex-col gap-10"
+        class="imgCon desktop:grid grid-cols-3  items-center desktop:gap-10 mobile:flex mobile:flex-col mobile:gap-10"
       >
-        <div class="container ">
+        <div class="container">
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
-            <a href="https://github.com/shawilayoul/cakeart" class="hover:text-oranged"
+            <a href="https://github.com/shawilayoul/silvercake" class="hover:text-oranged"
               >github Code</a
             >
             <a href=" https://cakeart.vercel.app/" class="hover:text-oranged">webSite</a>
@@ -71,6 +69,12 @@ onBeforeUnmount(() => {
               <div class="laptop__under"></div>
             </div>
             <div class="laptop__shadow"></div>
+          </div>
+          <div class="bottom flex items-center justify-evenly text-white p-2">
+            <button class="hover:text-oranged">ReactJs</button>
+            <button class="hover:text-oranged">SASS</button>
+            <button class="hover:text-oranged">MongoDb</button>
+            <button class="hover:text-oranged">TanStack Query</button>
           </div>
         </div>
         <div class="container">
@@ -98,6 +102,11 @@ onBeforeUnmount(() => {
             </div>
             <div class="laptop__shadow"></div>
           </div>
+          <div class="bottom flex items-center justify-evenly text-white p-2">
+            <button class="hover:text-oranged">wordpress</button>
+            <button class="hover:text-oranged">Figma</button>
+            <button class="hover:text-oranged">CSS</button>
+          </div>
         </div>
         <div class="container">
           <div
@@ -117,18 +126,85 @@ onBeforeUnmount(() => {
             </div>
             <div class="laptop__shadow"></div>
           </div>
+          <div class="bottom flex items-center justify-evenly text-white p-2">
+            <button class="hover:text-oranged">React</button>
+            <button class="hover:text-oranged">MongoDb</button>
+            <button class="hover:text-oranged">CSS</button>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
+          >
+            <a href="https://github.com/shawilayoul/aocholprofile" class="hover:text-oranged"
+              >github Code</a
+            >
+            <a href="https://shawilayoul.github.io/aocholprofile/" class="hover:text-oranged">webSite</a>
+          </div>
+          <div class="laptop">
+            <div class="laptop__screen">
+              <img src="../assets/images/profile.png" width="1600" height="1000" alt="Screen" />
+            </div>
+            <div class="laptop__bottom">
+              <div class="laptop__under"></div>
+            </div>
+            <div class="laptop__shadow"></div>
+          </div>
+          <div class="bottom flex items-center justify-evenly text-white p-2">
+            <button class="hover:text-oranged">React</button>
+            <button class="hover:text-oranged">MongoDb</button>
+            <button class="hover:text-oranged">SASS</button>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
+          >
+            <a href="https://github.com/shawilayoul/sleekStyleVue" class="hover:text-oranged"
+              >github Code</a
+            >
+            <a href="https://sleekstylevanila.netlify.app/" class="hover:text-oranged">webSite</a>
+          </div>
+          <div class="laptop">
+            <div class="laptop__screen">
+              <img src="../assets/images/sleekStyle.png" width="1600" height="1000" alt="Screen" />
+            </div>
+            <div class="laptop__bottom">
+              <div class="laptop__under"></div>
+            </div>
+            <div class="laptop__shadow"></div>
+          </div>
+          <div class="bottom flex items-center justify-evenly text-white p-2">
+            <button class="hover:text-oranged">React</button>
+            <button class="hover:text-oranged">MongoDb</button>
+            <button class="hover:text-oranged">CSS</button>
+          </div>
         </div>
       </div>
-      <div class="mobil-ipad  desktop:block mobile:hidden !important">
+      <div class="mobil-ipad desktop:block mobile:hidden !important">
         <div class="ipad">
           <div class="screen">
-            <img src="../assets/images/cakeHom.png" alt="Image inside iPad" class="ipad-image" />
+            <img src="../assets/images/cakeTablate.png" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
         <div class="ipad2">
           <div class="screen">
             <img
-              src="../assets/images/sliverspoonhome.png"
+              src="../assets/images/sliverTablate.png"
+              alt="Image inside iPad"
+              class="ipad-image"
+            />
+          </div>
+        </div>
+        <div class="ipad">
+          <div class="screen">
+            <img src="../assets/images/cakeTablate.png" alt="Image inside iPad" class="ipad-image" />
+          </div>
+        </div>
+        <div class="ipad2">
+          <div class="screen">
+            <img
+              src="../assets/images/sliverTablate.png"
               alt="Image inside iPad"
               class="ipad-image"
             />
@@ -136,18 +212,18 @@ onBeforeUnmount(() => {
         </div>
         <div class="ipad3">
           <div class="screen">
-            <img src="../assets/images/air.png" alt="Image inside iPad" class="ipad-image" />
+            <img src="../assets/images/airTablate.png" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
         <div class="phone1">
           <div class="screen">
-            <img src="../assets/images/cakeHom.png" alt="Image inside iPad" class="ipad-image" />
+            <img src="../assets/images/cakePhone.png" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
         <div class="phone2">
           <div class="screen">
             <img
-              src="../assets/images/sliverspoonhome.png"
+              src="../assets/images/sliverPhone.png"
               alt="Image inside iPad"
               class="ipad-image"
             />
@@ -155,7 +231,7 @@ onBeforeUnmount(() => {
         </div>
         <div class="phone3">
           <div class="screen">
-            <img src="../assets/images/air.png" alt="Image inside iPad" class="ipad-image" />
+            <img src="../assets/images/airPhone.png" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
       </div>
@@ -183,7 +259,7 @@ onBeforeUnmount(() => {
   margin-right: 1rem;
   padding-right: 1rem;
   padding-left: 1rem;
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -193,7 +269,7 @@ onBeforeUnmount(() => {
 .laptop {
   position: relative;
   margin: auto;
-  max-width: 23rem;
+  max-width: 20rem;
   .laptop__screen {
     position: relative;
     z-index: 1;
@@ -298,10 +374,10 @@ onBeforeUnmount(() => {
   position: relative;
 }
 .ipad {
-  left: 22%;
-  top: 46%;
-  width: 160px; /* Adjust width as needed */
-  height: 200px; /* Adjust height as needed */
+  left: 23%;
+  top: 20%;
+  width: 130px; /* Adjust width as needed */
+  height: 180px; /* Adjust height as needed */
   background-color: #e2e8f0;
   border-radius: 10px;
   padding: 10px;
@@ -315,9 +391,9 @@ onBeforeUnmount(() => {
 }
 .ipad2 {
   left: 56%;
-  top: 46%;
-  width: 160px; /* Adjust width as needed */
-  height: 200px; /* Adjust height as needed */
+  top: 20%;
+  width: 130px; /* Adjust width as needed */
+  height: 180px; /* Adjust height as needed */
   background-color: #e2e8f0;
   border-radius: 10px;
   padding: 10px;
@@ -329,12 +405,13 @@ onBeforeUnmount(() => {
   justify-content: center;
   z-index: 2;
 }
+
 /***ipda3 style */
 .ipad3 {
   right: 1%;
-  top: 46%;
-  width: 160px; /* Adjust width as needed */
-  height: 200px; /* Adjust height as needed */
+  top: 20%;
+  width: 130px; /* Adjust width as needed */
+  height: 180px; /* Adjust height as needed */
   background-color: #e2e8f0;
   border-radius: 10px;
   padding: 10px;
@@ -349,7 +426,7 @@ onBeforeUnmount(() => {
 /***phone 1 style */
 .phone1 {
   left: 2%;
-  top: 48%;
+  top: 22%;
   width: 80px; /* Adjust width as needed */
   height: 150px; /* Adjust height as needed */
   background-color: lightgray;
@@ -365,8 +442,8 @@ onBeforeUnmount(() => {
 }
 /***phone 2 style */
 .phone2 {
-  left: 35%;
-  top: 48%;
+  left: 37%;
+  top: 22%;
   width: 80px; /* Adjust width as needed */
   height: 150px; /* Adjust height as needed */
   background-color: lightgray;
@@ -382,8 +459,8 @@ onBeforeUnmount(() => {
 }
 /***phone 3 style */
 .phone3 {
-  right: 26%;
-  top: 48%;
+  right: 23%;
+  top: 22%;
   width: 80px; /* Adjust width as needed */
   height: 150px; /* Adjust height as needed */
   background-color: lightgray;
