@@ -1,8 +1,6 @@
 <script setup>
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { onBeforeUnmount, onMounted, ref } from 'vue'
-gsap.registerPlugin(ScrollTrigger)
+
+/*gsap.registerPlugin(ScrollTrigger)
 
 const scrollContainer = ref(null)
 
@@ -40,7 +38,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', handleScroll)
-})
+})*/
 </script>
 <template>
   <main

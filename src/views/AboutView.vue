@@ -1,13 +1,9 @@
 <script setup>
 import { image } from '@/assets/images'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useDataStore } from '@/stores/data'
-import { onBeforeUnmount, onMounted, ref, computed } from 'vue'
+import { ref, computed } from 'vue'
 import cv from '@/assets/AocholAyoulCv .pdf'
-gsap.registerPlugin(ScrollTrigger)
 
-const scrollContainer = ref(null)
 
 /**tackling  about me section */
 
@@ -26,84 +22,7 @@ const toggleDescription = () => {
   showFullAboutMe.value = !showFullAboutMe.value
 }
 
-const handleScroll = () => {
-  const sections = scrollContainer.value.querySelectorAll('.section')
-  const pSection = scrollContainer.value.querySelector('p')
-  const imgContainer = scrollContainer.value.querySelector('.imgContainer')
-  // animating image container
-  const imgrect = imgContainer.getBoundingClientRect()
-  if (imgrect.top < window.innerHeight && imgrect.bottom > 0) {
-    gsap.fromTo(
-      imgContainer,
-      {
-        opacity: 0,
-        rotation: 350,
-        scale: 0.2
-      },
-      {
-        opacity: 1,
-        rotation: 0,
-        scale: 1,
-        duration: 1,
-        delay: 1,
-        scrollTrigger: imgContainer
-      }
-    )
-  }
-  // animating p sections
 
-  const rect = pSection.getBoundingClientRect()
-  if (rect.top < window.innerHeight && rect.bottom > 0) {
-    gsap.fromTo(
-      pSection,
-      {
-        opacity: 0,
-        x: 150,
-        skewX: 30
-      },
-      {
-        opacity: 1,
-        x: 0,
-        skewX: 0,
-        duration: 1,
-        delay: 0.3,
-        scrollTrigger: pSection
-      }
-    )
-  }
-  sections.forEach((section) => {
-    const rect = section.getBoundingClientRect()
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
-      gsap.fromTo(
-        section,
-        {
-          letterSpacing: '10px',
-          opacity: 0,
-          x: 300,
-          skewX: 65
-        },
-        {
-          letterSpacing: '0',
-          opacity: 1,
-          x: 0,
-          duration: 1,
-          delay: 0.3,
-          skewX: 0,
-          scrollTrigger: section
-        }
-      )
-    }
-  })
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-  handleScroll() // Initial call to animate sections on load.
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
 </script>
 
 <template>

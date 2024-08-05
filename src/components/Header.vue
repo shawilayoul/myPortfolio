@@ -2,6 +2,8 @@
 <script setup>
 import { ref } from 'vue'
 
+const props = defineProps(['toggleDarkMode', 'isDarkMode'])
+
 const showNavBar = ref(false)
 
 const toggleMenu = () => {
@@ -37,13 +39,25 @@ const menus = [
 </script>
 
 <template>
-  <header class="fixed flex h-[70px] justify-evenly items-center w-[100vw] desktop:w-[100%] bg-white z-10">
-    <nav class="relative flex h-[70px] w-[100vw] items-center justify-evenly gap-28 desktop:w-[95%] bg-white z-10">
+  <header
+    class="fixed flex h-[70px] justify-evenly items-center w-[100vw] desktop:w-[100%] bg-white z-10 dark:text-black"
+  >
+    <nav
+      class="relative flex h-[70px] w-[100vw] items-center justify-evenly gap-28 desktop:w-[95%] bg-white z-10"
+    >
       <a href="#home"
-        ><div class="logo  font-bold desktop:text-[25px] hover:text-oranged text-blue desktop:mr-20 mobile:mr-72 mobile:text-[20px]">
+        ><div
+          class="logo font-bold desktop:text-[25px] hover:text-oranged text-blue desktop:mr-20 mobile:mr-72 mobile:text-[20px]"
+        >
           <h2><span class="text-oranged">A</span>ochol</h2>
         </div></a
       >
+      <button
+        @click="props.toggleDarkMode"
+        :class="[props.isDarkMode ? 'pi pi-sun' : 'pi pi-moon']"
+        class="absolute text-[22px] font-bold desktop:hidden"
+      ></button>
+
       <div class="desktop:flex gap-6 mobile:hidden">
         <ul v-for="menu in menus" :key="menu" class="flex">
           <a :href="menu.link">
@@ -53,19 +67,24 @@ const menus = [
           </a>
         </ul>
       </div>
-
+      <button
+        @click="props.toggleDarkMode"
+        :class="[props.isDarkMode ? 'pi pi-sun' : 'pi pi-moon'] "
+        class="text-[22px] font-bold"
+      ></button>
       <div
         v-if="showNavBar"
         class="mobile:flex absolute flex-col gap-5 py-2 px-4 mt-[350px] w-full bg-gray desktop:hidden"
       >
         <ul v-for="menu in menus" :key="menu">
           <a :href="menu.link">
-            <li class="flex font-bold text-lg hover:text-oranged"  @click="toggleMenu">
+            <li class="flex font-bold text-lg hover:text-oranged" @click="toggleMenu">
               {{ menu.title }}
             </li>
           </a>
         </ul>
       </div>
+      
       <div>
         <i
           @click="toggleMenu"
@@ -173,4 +192,5 @@ header {
   position: absolute;
   right: 1%;
 }
+
 </style>

@@ -1,44 +1,5 @@
 <script setup>
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { onBeforeUnmount, onMounted, ref } from 'vue'
-gsap.registerPlugin(ScrollTrigger)
 
-const scrollContainer = ref(null)
-
-const handleScroll = () => {
-  const title = scrollContainer.value.querySelector('.title ')
-  const rect = title.getBoundingClientRect()
-  if (rect.top < window.innerHeight && rect.bottom > 0) {
-    gsap.fromTo(
-      title,
-      {
-        letterSpacing: '10px',
-        opacity: 0,
-        x: 300,
-        skewX: 65
-      },
-      {
-        letterSpacing: '0',
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        delay: 0.3,
-        skewX: 0,
-        scrollTrigger: title
-      }
-    )
-  }
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-  handleScroll() // Initial call to animate sections on load.
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
 </script>
 
 <template>
