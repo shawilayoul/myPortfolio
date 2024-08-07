@@ -9,6 +9,10 @@ const showNavBar = ref(false)
 const toggleMenu = () => {
   showNavBar.value = !showNavBar.value
 }
+
+/**** langauage translator */
+
+
 const menus = [
   {
     title: 'Home',
@@ -55,9 +59,9 @@ const menus = [
       <button
         @click="props.toggleDarkMode"
         :class="[props.isDarkMode ? 'pi pi-sun' : 'pi pi-moon']"
-        class="absolute text-[22px] font-bold desktop:hidden"
+        class="absolute text-[22px] font-bold desktop:hidden "
       ></button>
-
+    
       <div class="desktop:flex gap-6 mobile:hidden">
         <ul v-for="menu in menus" :key="menu" class="flex">
           <a :href="menu.link">
@@ -69,8 +73,8 @@ const menus = [
       </div>
       <button
         @click="props.toggleDarkMode"
-        :class="[props.isDarkMode ? 'pi pi-sun' : 'pi pi-moon'] "
-        class="text-[22px] font-bold"
+        :class="[props.isDarkMode ? 'pi pi-sun' : 'pi pi-moon']"
+        class="text-[22px] font-bold  mobile:hidden tablate:hidden desktop:block"
       ></button>
       <div
         v-if="showNavBar"
@@ -84,7 +88,7 @@ const menus = [
           </a>
         </ul>
       </div>
-      
+
       <div>
         <i
           @click="toggleMenu"
@@ -192,5 +196,4 @@ header {
   position: absolute;
   right: 1%;
 }
-
 </style>
