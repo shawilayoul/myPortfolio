@@ -1,5 +1,4 @@
 <script setup>
-
 /*gsap.registerPlugin(ScrollTrigger)
 
 const scrollContainer = ref(null)
@@ -41,13 +40,9 @@ onBeforeUnmount(() => {
 })*/
 </script>
 <template>
-  <main
-    class="w-[100%] flex justify-between transition delay-3000 duration-3000"
-    id="home"
-  
-  >
+  <main class="w-[100%] flex justify-between transition delay-3000 duration-3000" id="home">
     <div class="left ml-[10%] flex flex-col items-start justify-center gap-12">
-      <div class="section">
+      <div class="section" data-aos="fade-up" data-aos-duration="3000">
         <h3 class="desktop:text-lg mobile:text-sm">HEY THERE!</h3>
 
         <h1 class="desktop:text-[40px] font-bold my-2 mobile:text-[20px]">I AM AOCHOL AYOUL</h1>
@@ -122,9 +117,9 @@ onBeforeUnmount(() => {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
-.pi:hover{
-transform: scale(1.5);
-transition: all .5s ease-in-out;
+.pi:hover {
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
 }
 .hombtn:hover {
   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);

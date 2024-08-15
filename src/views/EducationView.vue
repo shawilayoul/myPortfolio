@@ -2,18 +2,21 @@
 <script lang="ts" setup>
 import { useDataStore } from '@/stores/data'
 const store = useDataStore()
-
-
 </script>
 
 <template>
   <main
     class="w-[80%] m-auto desktop:h-[100vh] flex items-center justify-center flex-col gap-5 z-1 mb-10"
   >
-    <div class="top">
+    <div class="top" data-aos="fade-up" data-aos-duration="3000">
       <h2 class="font-bold desktop:text-[25px] mobile:text-[20px]">My Resume</h2>
     </div>
-    <div class="bottom desktop:flex gap-10 w-full mobile:gap-5">
+    <div
+      class="bottom desktop:flex gap-10 w-full mobile:gap-5"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
       <div class="left flex flex-col gap-4 mb-5 desktop:w-[50%]">
         <div
           class="blog flex flex-col gap-2 p-4 shadow-lg shadow-cyan-500/50 rounded-lg"

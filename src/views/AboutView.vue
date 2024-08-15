@@ -4,15 +4,14 @@ import { useDataStore } from '@/stores/data'
 import { ref, computed } from 'vue'
 import cv from '@/assets/AocholAyoulCv .pdf'
 
-
 /**tackling  about me section */
 
 const store = useDataStore()
 const showFullAboutMe = ref(false)
 const truncatedAboutMe = computed(() => {
-  let description = store.AboutDescriptionData 
+  let description = store.AboutDescriptionData
   if (!showFullAboutMe.value) {
-    description = store.AboutDescriptionData .substring(0, 790) + '...'
+    description = store.AboutDescriptionData.substring(0, 790) + '...'
   }
   return description
 })
@@ -21,12 +20,12 @@ const truncatedAboutMe = computed(() => {
 const toggleDescription = () => {
   showFullAboutMe.value = !showFullAboutMe.value
 }
-
-
 </script>
 
 <template>
   <main
+    data-aos="fade-up"
+    data-aos-duration="3000"
     class="flex items-center w-[80%] m-auto desktop:h-[100vh] mb-10 gap-10 transition delay-3000 duration-3000"
   >
     <div class="flex flex-col flex-1 desktop:gap-5 w-[100%] mobile:gap-6">
@@ -34,10 +33,7 @@ const toggleDescription = () => {
 
       <div>
         <p>{{ truncatedAboutMe }}</p>
-        <button
-          @click="toggleDescription"
-          class=" text-green p-1  rounded-lg cursor-pointer mt-1"
-        >
+        <button @click="toggleDescription" class="text-green p-1 rounded-lg cursor-pointer mt-1">
           {{ showFullAboutMe ? 'show less' : 'show more' }}
         </button>
       </div>
@@ -52,10 +48,16 @@ const toggleDescription = () => {
         <i class="pi pi-twitter text-blue desktop:text-[2rem] mobile:text-[1.5rem]"></i>
       </div>
       <a download="" :href="cv">
-        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer  mobile:text-[16px]">Download CV</button></a
+        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer mobile:text-[16px]">
+          Download CV
+        </button></a
       >
     </div>
-    <div class="imgContainer desktop:block mobile:hidden">
+    <div
+      class="imgContainer desktop:block mobile:hidden"
+      data-aos="zoom-in-up"
+      data-aos-duration="1500"
+    >
       <div class="icon">
         <div class="imgbg" style="--i: 1">
           <img :src="image.html" alt="" />
@@ -181,9 +183,9 @@ const toggleDescription = () => {
   animation: animate-02 5s linear infinite;
 }
 
-.pi:hover{
-transform: scale(1.4);
-transition: all .5s ease-in-out;
+.pi:hover {
+  transform: scale(1.4);
+  transition: all 0.5s ease-in-out;
 }
 
 @keyframes animate-01 {

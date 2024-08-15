@@ -37,11 +37,11 @@ const sendEmail = () => {
   <main
     class="desktop:w-[60%] mobile:w-[80%] m-auto desktop:h-[100vh] flex flex-col desktop:gap-10 mobile:gap-5 justify-center"
   >
-    <div class="top">
+    <div class="top" data-aos="fade-up" data-aos-duration="3000">
       <h3 class="text-center text-[23px] font-bold">Get in touch</h3>
     </div>
     <div
-      class="bottom desktop:flex-row gap-10 justify-between w-full mobile:flex flex-col mobile:gap-10  dark:text-black"
+      class="bottom desktop:flex-row gap-10 justify-between w-full mobile:flex flex-col mobile:gap-10 dark:text-black"
     >
       <div
         class="left bg-white shadow-lg shadow-gray p-2 rounded dark:shadow desktop:w-[50%] flex flex-col desktop:gap-8 items-center mobile:gap-4"
@@ -70,7 +70,7 @@ const sendEmail = () => {
         </div>
       </div>
       <div
-        class="right bg-white shadow-lg shadow-gray p-2 rounded dark:shadow  desktop:w-[50%] flex flex-col gap-8"
+        class="right bg-white shadow-lg shadow-gray p-2 rounded dark:shadow desktop:w-[50%] flex flex-col gap-8"
       >
         <h3 class="font-bold text-center">Write me a message</h3>
         <form

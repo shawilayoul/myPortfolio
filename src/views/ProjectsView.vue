@@ -1,19 +1,22 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <main>
     <div
       class="projectContainer desktop:w-[80%] moblie:w-[80%] m-auto flex flex-col justify-center gap-10 mobile:mb-10"
     >
-      <div>
+      <div data-aos="fade-up" data-aos-duration="3000">
         <h2 class="font-bold desktop:text-[25px] text-center mobile:text-[20px]">My projects</h2>
       </div>
       <div
         class="imgCon desktop:grid desktop:grid-cols-3 gap-10 mobile:grid mobile:grid-cols-1 moblie:w-[100%] m-auto flex"
       >
-        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
+        <div
+          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -44,7 +47,12 @@
             </button>
           </div>
         </div>
-        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
+        <div
+          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -77,7 +85,12 @@
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">CSS</button>
           </div>
         </div>
-        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
+        <div
+          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -103,7 +116,12 @@
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">CSS</button>
           </div>
         </div>
-        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
+        <div
+          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -131,7 +149,12 @@
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">SASS</button>
           </div>
         </div>
-        <div class="container desktop:max-w-[400px] mobile:max-w-[320px]">
+        <div
+          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
@@ -159,7 +182,12 @@
         </div>
       </div>
       <div class="mobil-ipad desktop:block mobile:hidden !important">
-        <div class="ipad">
+        <div
+          class="ipad"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div class="screen">
             <img
               src="../assets/images/cakeTablate.png"
@@ -168,7 +196,12 @@
             />
           </div>
         </div>
-        <div class="ipad2">
+        <div
+          class="ipad2"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div class="screen">
             <img
               src="../assets/images/sliverTablate.png"
@@ -177,7 +210,12 @@
             />
           </div>
         </div>
-        <div class="ipad">
+        <div
+          class="ipad"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div class="screen">
             <img
               src="../assets/images/cakeTablate.png"
@@ -186,7 +224,12 @@
             />
           </div>
         </div>
-        <div class="ipad2">
+        <div
+          class="ipad2"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div class="screen">
             <img
               src="../assets/images/sliverTablate.png"
@@ -195,17 +238,32 @@
             />
           </div>
         </div>
-        <div class="ipad3">
+        <div
+          class="ipad3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div class="screen">
             <img src="../assets/images/airTablate.png" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
-        <div class="phone1">
+        <div
+          class="phone1"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div class="screen">
             <img src="../assets/images/cakePhone.png" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
-        <div class="phone2">
+        <div
+          class="phone2"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div class="screen">
             <img
               src="../assets/images/sliverPhone.png"
@@ -214,7 +272,12 @@
             />
           </div>
         </div>
-        <div class="phone3">
+        <div
+          class="phone3"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
           <div class="screen">
             <img src="../assets/images/airPhone.png" alt="Image inside iPad" class="ipad-image" />
           </div>
