@@ -42,12 +42,12 @@ onBeforeUnmount(() => {
 <template>
   <main class="w-[100%] flex justify-between transition delay-3000 duration-3000" id="home">
     <div class="left ml-[10%] flex flex-col items-start justify-center gap-12">
-      <div class="section" data-aos="fade-up" data-aos-duration="3000">
-        <h3 class="desktop:text-lg mobile:text-sm">HEY THERE!</h3>
+      <div class="section" data-aos="fade-up" data-aos-duration="2500">
+        <h3 class="desktop:text-lg mobile:text-sm">Salut!</h3>
 
-        <h1 class="desktop:text-[40px] font-bold my-2 mobile:text-[20px]">I AM AOCHOL AYOUL</h1>
+        <h1 class="desktop:text-[40px] font-bold my-2 mobile:text-[20px]">Je suis AOCHOL AYOUL</h1>
 
-        <p class="desktop:text-[35px] mobile:text-[18px]">Junior web developer</p>
+        <p class="desktop:text-[35px] mobile:text-[18px]">Développeur web junior</p>
       </div>
       <div class="flex gap-12 cursor-pointer">
         <a href="https://github.com/shawilayoul">
@@ -60,7 +60,7 @@ onBeforeUnmount(() => {
         <i class="pi pi-twitter text-blue desktop:text-[2rem] mobile:text-[1.5rem]"></i>
       </div>
       <a href="#projects">
-        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">See My Work</button></a
+        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">Voir mon travail</button></a
       >
     </div>
     <div

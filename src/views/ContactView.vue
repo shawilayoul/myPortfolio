@@ -38,7 +38,7 @@ const sendEmail = () => {
     class="desktop:w-[60%] mobile:w-[80%] m-auto desktop:h-[100vh] flex flex-col desktop:gap-10 mobile:gap-5 justify-center"
   >
     <div class="top" data-aos="fade-up" data-aos-duration="3000">
-      <h3 class="text-center text-[23px] font-bold">Get in touch</h3>
+      <h3 class="text-center text-[23px] font-bold">Contactez-nous</h3>
     </div>
     <div
       class="bottom desktop:flex-row gap-10 justify-between w-full mobile:flex flex-col mobile:gap-10 dark:text-black"
@@ -46,7 +46,7 @@ const sendEmail = () => {
       <div
         class="left bg-white shadow-lg shadow-gray p-2 rounded dark:shadow desktop:w-[50%] flex flex-col desktop:gap-8 items-center mobile:gap-4"
       >
-        <h3 class="font-bold">Talk to me</h3>
+        <h3 class="font-bold">Parle moi</h3>
         <div
           class="box flex flex-col desktop:gap-2 mobile:gap-1 items-center border p-2 rounded w-[250px] cursor-pointer"
         >
@@ -72,7 +72,7 @@ const sendEmail = () => {
       <div
         class="right bg-white shadow-lg shadow-gray p-2 rounded dark:shadow desktop:w-[50%] flex flex-col gap-8"
       >
-        <h3 class="font-bold text-center">Write me a message</h3>
+        <h3 class="font-bold text-center">Écrivez-moi un message</h3>
         <form
           @submit.prevent="sendEmail"
           ref="emailForm"
@@ -83,7 +83,7 @@ const sendEmail = () => {
               type="text"
               name="user_name"
               v-model="form.name"
-              placeholder="Enter your name"
+              placeholder="Entrez votre nom"
               class="w-full p-1"
               required
             />
@@ -94,7 +94,7 @@ const sendEmail = () => {
               name="user_email"
               v-model="form.email"
               required
-              placeholder="Enter your Email"
+              placeholder="Entrez votre  Email"
               class="w-full p-1"
             />
           </div>
@@ -119,7 +119,7 @@ const sendEmail = () => {
               required
             ></textarea>
           </div>
-          <button class="contactBtn text-white p-1 rounded" type="submit">Send message</button>
+          <button class="contactBtn text-white p-1 rounded" type="submit">Envoyer un message</button>
         </form>
       </div>
     </div>

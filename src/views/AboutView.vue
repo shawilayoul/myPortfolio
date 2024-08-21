@@ -25,16 +25,16 @@ const toggleDescription = () => {
 <template>
   <main
     data-aos="fade-up"
-    data-aos-duration="3000"
+    data-aos-duration="2500"
     class="flex items-center w-[80%] m-auto desktop:h-[100vh] mb-10 gap-10 transition delay-3000 duration-3000"
   >
     <div class="flex flex-col flex-1 desktop:gap-5 w-[100%] mobile:gap-6">
-      <h2 class="desktop:text-[30px] font-bold mobile:text-[20px]">About Me</h2>
+      <h2 class="desktop:text-[30px] font-bold mobile:text-[20px]">Sur moi</h2>
 
       <div>
         <p>{{ truncatedAboutMe }}</p>
         <button @click="toggleDescription" class="text-green p-1 rounded-lg cursor-pointer mt-1">
-          {{ showFullAboutMe ? 'show less' : 'show more' }}
+          {{ showFullAboutMe ? 'Voir moins' : 'Voir plus' }}
         </button>
       </div>
       <div class="flex gap-12 cursor-pointer">
@@ -49,7 +49,7 @@ const toggleDescription = () => {
       </div>
       <a download="" :href="cv">
         <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer mobile:text-[16px]">
-          Download CV
+          Télécharger CV
         </button></a
       >
     </div>

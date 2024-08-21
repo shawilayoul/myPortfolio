@@ -15,24 +15,24 @@ const toggleMenu = () => {
 
 const menus = [
   {
-    title: 'Home',
+    title: 'Accueil',
     link: '#home'
   },
   {
-    title: 'About',
+    title: 'À propos',
     link: '#about'
   },
 
   {
-    title: 'Skills',
+    title: 'Compétences',
     link: '#skill'
   },
   {
-    title: 'Education',
+    title: 'Èducation',
     link: '#education'
   },
   {
-    title: 'Projects',
+    title: 'Projets',
     link: '#projects'
   },
   {

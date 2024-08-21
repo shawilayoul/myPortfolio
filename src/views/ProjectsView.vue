@@ -5,8 +5,8 @@
     <div
       class="projectContainer desktop:w-[80%] moblie:w-[80%] m-auto flex flex-col justify-center gap-10 mobile:mb-10"
     >
-      <div data-aos="fade-up" data-aos-duration="3000">
-        <h2 class="font-bold desktop:text-[25px] text-center mobile:text-[20px]">My projects</h2>
+      <div data-aos="fade-up" data-aos-duration="2500">
+        <h2 class="font-bold desktop:text-[25px] text-center mobile:text-[20px]">Mes projets</h2>
       </div>
       <div
         class="imgCon desktop:grid desktop:grid-cols-3 gap-10 mobile:grid mobile:grid-cols-1 moblie:w-[100%] m-auto flex"

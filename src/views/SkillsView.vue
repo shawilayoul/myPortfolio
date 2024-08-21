@@ -1,20 +1,19 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script>
-
-</script>
+<script></script>
 
 <template>
   <main
     class="w-[80%] m-auto desktop:h-[100vh] flex flex-col items-center justify-center gap-6 mt-2 transition delay-3000 duration-3000 mb-10 mobile:mb-28"
   >
-    <div class="top flex flex-col items-center" data-aos="fade-up" data-aos-duration="3000">
-      <h2 class="font-bold desktop:text-[25px] mobile:text-[20px]">Skills</h2>
-      <p class="text-[20px] mobile:text-[16px]">My Technical skills</p>
-      
+    <div class="top flex flex-col items-center" data-aos="fade-up" data-aos-duration="2500">
+      <h2 class="font-bold desktop:text-[25px] mobile:text-[20px]">Compétences</h2>
+      <p class="text-[20px] mobile:text-[16px]">Mes compétences techniques</p>
     </div>
     <div class="bottom w-[100%] desktop:flex justify-between gap-12 items-center">
       <div class="left desktop:w-[50%]">
-        <h3 class="font-bold mb-4 text-[20px]">Front-end</h3>
+        <h3 class="font-bold mb-4 text-[20px]" data-aos="fade-up" data-aos-duration="2500">
+          Front-end
+        </h3>
         <div class="skills mb-4">
           <div class="flex justify-between desktop:mb-2 mobile:mb-1">
             <p>HTML</p>
@@ -71,7 +70,9 @@
         </div>
       </div>
       <div class="right desktop:w-[50%]">
-        <h3 class="font-bold mb-4 text-[20px]">Back-end</h3>
+        <h3 class="font-bold mb-4 text-[20px]" data-aos="fade-up" data-aos-duration="2500">
+          Back-end
+        </h3>
         <div class="skills mb-5">
           <div class="flex justify-between mb-2">
             <p>PHP</p>
