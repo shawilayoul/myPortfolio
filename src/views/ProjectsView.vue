@@ -94,14 +94,14 @@
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
-            <a href="https://github.com/shawilayoul/NikeAire" class="hover:text-oranged"
-              >github Code</a
+            <a href="#" class="hover:text-oranged"
+              >Music App</a
             >
-            <a href="https://shawilayoul.github.io/NikeAire/" class="hover:text-oranged">webSite</a>
+            <a href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes" class="hover:text-oranged">Google play</a>
           </div>
           <div class="laptop">
             <div class="laptop__screen">
-              <img src="../assets/images/air.png" width="1600" height="1000" alt="Screen" />
+              <img src="../assets/images/app1.jpg" width="1600" height="1000" alt="Screen" />
             </div>
             <div class="laptop__bottom">
               <div class="laptop__under"></div>
@@ -109,11 +109,14 @@
             <div class="laptop__shadow"></div>
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">React</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">React Native</button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              MongoDb
+              NestJs
             </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">CSS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb / FireBase
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">Tailwind CSS</button>
           </div>
         </div>
         <div
@@ -161,7 +164,7 @@
             <a href="https://github.com/shawilayoul/sleekStyleVue" class="hover:text-oranged"
               >github Code</a
             >
-            <a href="https://sleekstylevanila.netlify.app/" class="hover:text-oranged">webSite</a>
+            <a href="https://sleekstyles.onrender.com" class="hover:text-oranged">webSite</a>
           </div>
           <div class="laptop">
             <div class="laptop__screen">
@@ -174,10 +177,11 @@
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">React</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">ExpressJs</button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
               MongoDb
             </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">CSS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">Tailwind CSS</button>
           </div>
         </div>
       </div>
@@ -245,7 +249,7 @@
           data-aos-duration="2500"
         >
           <div class="screen">
-            <img src="../assets/images/airTablate.png" alt="Image inside iPad" class="ipad-image" />
+            <img src="../assets/images/app1.jpg" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
         <div
@@ -279,7 +283,7 @@
           data-aos-duration="2500"
         >
           <div class="screen">
-            <img src="../assets/images/airPhone.png" alt="Image inside iPad" class="ipad-image" />
+            <img src="../assets/images/app1.jpg" alt="Image inside iPad" class="ipad-image" />
           </div>
         </div>
       </div>

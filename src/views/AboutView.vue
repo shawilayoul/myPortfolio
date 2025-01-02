@@ -11,7 +11,7 @@ const showFullAboutMe = ref(false)
 const truncatedAboutMe = computed(() => {
   let description = store.AboutDescriptionData
   if (!showFullAboutMe.value) {
-    description = store.AboutDescriptionData.substring(0, 790) + '...'
+    description = store.AboutDescriptionData.substring(0, 700) + '...'
   }
   return description
 })

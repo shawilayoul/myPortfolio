@@ -34,7 +34,7 @@
         </div>
         <div class="skills mb-5">
           <div class="flex justify-between desktop:mb-2 mobile:mb-1">
-            <p>javascript</p>
+            <p>Javascript / TypeScript</p>
             <p>85%</p>
           </div>
           <div class="section item w-[100%] bg-gray rounded-full">
@@ -43,7 +43,7 @@
         </div>
         <div class="skills mb-5">
           <div class="flex justify-between desktop:mb-2 mobile:mb-1">
-            <p>ReactJs</p>
+            <p>ReactJs / React Native</p>
             <p>80%</p>
           </div>
           <div class="section item w-[100%] bg-gray rounded-full">
@@ -75,33 +75,6 @@
         </h3>
         <div class="skills mb-5">
           <div class="flex justify-between mb-2">
-            <p>PHP</p>
-            <p>65%</p>
-          </div>
-          <div class="section item w-[100%] bg-gray rounded-full">
-            <div class="line w-[65%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
-          </div>
-        </div>
-        <div class="skills mb-5">
-          <div class="flex justify-between mb-2">
-            <p>Symfony</p>
-            <p>60%</p>
-          </div>
-          <div class="section item w-[100%] bg-gray rounded-full">
-            <div class="line w-[60%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
-          </div>
-        </div>
-        <div class="skills mb-5">
-          <div class="flex justify-between mb-2">
-            <p>MYSQL</p>
-            <p>70%</p>
-          </div>
-          <div class="section item w-[100%] bg-gray rounded-full">
-            <div class="line w-[70%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
-          </div>
-        </div>
-        <div class="skills mb-5">
-          <div class="flex justify-between mb-2">
             <p>NodeJs</p>
             <p>80%</p>
           </div>
@@ -111,7 +84,34 @@
         </div>
         <div class="skills mb-5">
           <div class="flex justify-between mb-2">
-            <p>Express</p>
+            <p>ExpressJs</p>
+            <p>80%</p>
+          </div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[80%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
+          </div>
+        </div>
+        <div class="skills mb-5">
+          <div class="flex justify-between mb-2">
+            <p>NestJs</p>
+            <p>70%</p>
+          </div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[70%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
+          </div>
+        </div>
+        <div class="skills mb-5">
+          <div class="flex justify-between mb-2">
+            <p>MongoDB</p>
+            <p>80%</p>
+          </div>
+          <div class="section item w-[100%] bg-gray rounded-full">
+            <div class="line w-[80%] bg-oranged h-3 rounded-full" ref="animatedSection"></div>
+          </div>
+        </div>
+        <div class="skills mb-5">
+          <div class="flex justify-between mb-2">
+            <p>MySQL</p>
             <p>75%</p>
           </div>
           <div class="section item w-[100%] bg-gray rounded-full">
