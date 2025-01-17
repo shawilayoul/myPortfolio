@@ -1,26 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import Header from '@/components/Header.vue'
-import Footer from '@/components/Footer.vue'
+import appAdsTxt from '@/views/app-ads-txt.vue' // Import the app-ads-txt component
+
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL), // Using history mode for clean URLs
   routes: [
     {
-      path: '/header',
-      name: 'header',
-      component: Header
-    },
-    {
-      path: '/footer',
-      name: 'footer',
-      component: Footer
+      path: '/app-ads.txt',
+      name: 'app-ads-txt',
+      component: appAdsTxt // Only the app-ads-txt route
     }
   ]
-})
-router.beforeEach((to, from, next) => {
-  AOS.init() // Initialize AOS
-  next()
 })
 
 export default router
