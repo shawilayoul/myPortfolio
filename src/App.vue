@@ -45,11 +45,9 @@ const toggleDarkMode = () => {
         </nav>
       </header>
       <!-- Navigation to different sections using anchor links -->
-      <RouterView />
       <div id="home">
         <HomeView />
       </div>
-
       <div id="about">
         <AboutView />
       </div>
