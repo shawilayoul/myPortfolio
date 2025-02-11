@@ -2,7 +2,7 @@
 import { image } from '@/assets/images'
 import { useDataStore } from '@/stores/data'
 import { ref, computed } from 'vue'
-import cv from '@/assets/AocholAyoulCv .pdf'
+import cv from '@/assets/AocholAyoulCv.pdf'
 
 /**tackling  about me section */
 
@@ -29,7 +29,7 @@ const toggleDescription = () => {
     class="flex items-center w-[80%] m-auto desktop:h-[100vh] mb-10 gap-10 transition delay-3000 duration-3000"
   >
     <div class="flex flex-col flex-1 desktop:gap-5 w-[100%] mobile:gap-6">
-      <h2 class="desktop:text-[30px] font-bold mobile:text-[20px]">Sur moi</h2>
+      <h2 class="desktop:text-[30px] font-bold mobile:text-[20px]">À propos de moi</h2>
 
       <div>
         <p>{{ truncatedAboutMe }}</p>
