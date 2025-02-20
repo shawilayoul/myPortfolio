@@ -164,7 +164,7 @@
             <a href="https://github.com/shawilayoul/sleekStyleVue" class="hover:text-oranged"
               >github Code</a
             >
-            <a href="https://sleekstyles.onrender.com" class="hover:text-oranged">webSite</a>
+            <a href="https://sleekstyle.onrender.com" class="hover:text-oranged">webSite</a>
           </div>
           <div class="laptop">
             <div class="laptop__screen">
