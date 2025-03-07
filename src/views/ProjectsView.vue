@@ -11,6 +11,48 @@
       <div
         class="imgCon desktop:grid desktop:grid-cols-3 gap-10 mobile:grid mobile:grid-cols-1 moblie:w-[100%] m-auto flex"
       >
+        <!-- Project 2 -->
+        <div
+          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="2500"
+        >
+          <div
+            class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
+          >
+            <a href="https://github.com/shawilayoul/sleekStyles" class="hover:text-oranged"
+              >Github Code</a
+            >
+            <a href="https://sleekstyle.onrender.com" class="hover:text-oranged">E-commerce</a>
+          </div>
+          <div class="laptop">
+            <div class="laptop__screen">
+              <video width="100%" height="100%" controls>
+                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="laptop__bottom">
+              <div class="laptop__under"></div>
+            </div>
+            <div class="laptop__shadow"></div>
+          </div>
+          <div class="bottom flex items-center justify-evenly text-white p-2">
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              ReactJs
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              ExpressJs
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              Tailwind CSS
+            </button>
+          </div>
+        </div>
         <!-- Project 1 -->
         <div
           class="container desktop:max-w-[400px] mobile:max-w-[320px]"
@@ -56,48 +98,6 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
-        <div
-          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2500"
-        >
-          <div
-            class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
-          >
-            <a href="https://github.com/shawilayoul/sleekStyles" class="hover:text-oranged"
-              >Github Code</a
-            >
-            <a href="https://sleekstyle.onrender.com" class="hover:text-oranged">E-commerce</a>
-          </div>
-          <div class="laptop">
-            <div class="laptop__screen">
-              <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project2.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="laptop__bottom">
-              <div class="laptop__under"></div>
-            </div>
-            <div class="laptop__shadow"></div>
-          </div>
-          <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              ReactJs
-            </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              ExpressJs
-            </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              MongoDb
-            </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              Tailwind CSS
-            </button>
-          </div>
-        </div>
         <!-- Project 3 -->
         <div
           class="container desktop:max-w-[400px] mobile:max-w-[320px]"
