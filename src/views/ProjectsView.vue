@@ -24,8 +24,9 @@
             <a href="https://github.com/shawilayoul/silvercake" class="hover:text-oranged"
               >Github Code</a
             >
-            <a href="https://sleekstyle.onrender.com/" class="hover:text-oranged">E-commerce Dashboard</a>
-
+            <a href="https://sleekstyle.onrender.com/" class="hover:text-oranged"
+              >E-commerce Dashboard</a
+            >
           </div>
           <div class="laptop">
             <div class="laptop__screen">
@@ -65,17 +66,15 @@
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
-            <a href="#" class="hover:text-oranged">Music App</a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
-              class="hover:text-oranged"
-              >Google play</a
+            <a href="https://github.com/shawilayoul/sleekStyles" class="hover:text-oranged"
+              >Github Code</a
             >
+            <a href="https://sleekstyle.onrender.com" class="hover:text-oranged">E-commerce</a>
           </div>
           <div class="laptop">
             <div class="laptop__screen">
               <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project1.mp4" type="video/mp4" />
+                <source src="../assets/videos/project2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -86,13 +85,13 @@
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              React Native
+              ReactJs
             </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              NestJs
+              ExpressJs
             </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              MongoDb / FireBase
+              MongoDb
             </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
               Tailwind CSS
@@ -109,17 +108,19 @@
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
-            <a href="#" class="hover:text-oranged">Music App</a>
+            <a href="https://github.com/shawilayoul/VibePlay-Music-App" class="hover:text-oranged"
+              >Githup Code</a
+            >
             <a
               href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
               class="hover:text-oranged"
-              >Google play</a
+              >App in Google play</a
             >
           </div>
           <div class="laptop">
             <div class="laptop__screen">
               <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project1.mp4" type="video/mp4" />
+                <source src="../assets/videos/project3.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -132,11 +133,9 @@
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
               React Native
             </button>
+
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              NestJs
-            </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              MongoDb / FireBase
+              FireBase
             </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
               Tailwind CSS
@@ -153,17 +152,15 @@
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
-            <a href="#" class="hover:text-oranged">Music App</a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
-              class="hover:text-oranged"
-              >Google play</a
+            <a href="#" class="hover:text-oranged">Github Code</a>
+            <a href="https://musicappdashboard.onrender.com" class="hover:text-oranged"
+              >Music App Dashboard</a
             >
           </div>
           <div class="laptop">
             <div class="laptop__screen">
               <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project1.mp4" type="video/mp4" />
+                <source src="../assets/videos/project4.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -174,16 +171,17 @@
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              React Native
+              ReactJs
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              Tailwind CSS
             </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
               NestJs
             </button>
+
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              MongoDb / FireBase
-            </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              Tailwind CSS
+              FireBase
             </button>
           </div>
         </div>
@@ -197,17 +195,15 @@
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
-            <a href="#" class="hover:text-oranged">Music App</a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
-              class="hover:text-oranged"
-              >Google play</a
+            <a href="https://github.com/shawilayoul/CakeArts" class="hover:text-oranged"
+              >Github Code</a
             >
+            <a href="https://cakeart.vercel.app/" class="hover:text-oranged">CakeArts Website</a>
           </div>
           <div class="laptop">
             <div class="laptop__screen">
               <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project1.mp4" type="video/mp4" />
+                <source src="../assets/videos/project5.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -218,60 +214,16 @@
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              React Native
+              ReactJs
             </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              NestJs
+              Sass css
             </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              MongoDb / FireBase
+              ExpressJs
             </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              Tailwind CSS
-            </button>
-          </div>
-        </div>
-        <!-- Project 6 -->
-        <div
-          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2500"
-        >
-          <div
-            class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
-          >
-            <a href="#" class="hover:text-oranged">Music App</a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
-              class="hover:text-oranged"
-              >Google play</a
-            >
-          </div>
-          <div class="laptop">
-            <div class="laptop__screen">
-              <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="laptop__bottom">
-              <div class="laptop__under"></div>
-            </div>
-            <div class="laptop__shadow"></div>
-          </div>
-          <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              React Native
-            </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              NestJs
-            </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              MongoDb / FireBase
-            </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              Tailwind CSS
+              MongoDb
             </button>
           </div>
         </div>
