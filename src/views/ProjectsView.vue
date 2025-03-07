@@ -75,7 +75,7 @@
           <div class="laptop">
             <div class="laptop__screen">
               <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                <source src="../assets/videos/project1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -119,7 +119,7 @@
           <div class="laptop">
             <div class="laptop__screen">
               <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                <source src="../assets/videos/project1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -163,7 +163,7 @@
           <div class="laptop">
             <div class="laptop__screen">
               <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                <source src="../assets/videos/project1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -207,7 +207,7 @@
           <div class="laptop">
             <div class="laptop__screen">
               <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                <source src="../assets/videos/project1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -251,7 +251,7 @@
           <div class="laptop">
             <div class="laptop__screen">
               <video width="100%" height="100%" controls>
-                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                <source src="../assets/videos/project1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
