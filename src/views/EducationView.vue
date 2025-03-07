@@ -5,66 +5,96 @@ const store = useDataStore()
 </script>
 
 <template>
-  <main
-    class="w-[80%] m-auto desktop:h-[100vh] flex items-center justify-center flex-col gap-5 z-1 mb-10"
-  >
+  <main class="w-[80%] m-auto desktop:h-[100vh] flex items-center justify-center flex-col gap-5 z-1 mb-[200px]">
     <div class="top" data-aos="fade-up" data-aos-duration="2500">
-      <h2 class="font-bold desktop:text-[25px] mobile:text-[20px]">Èducation</h2>
+      <h2 class="font-bold desktop:text-[25px] mobile:text-[20px]">Éducation</h2>
     </div>
-    <div
-      class="bottom desktop:flex gap-10 w-full mobile:gap-5"
-    >
-      <div class="left flex flex-col gap-4 mb-5 desktop:w-[50%]">
-        <div
-          class="blog flex flex-col gap-2 p-4 shadow-lg shadow-cyan-500/50 rounded-lg"
-          v-for="education in store.educationLeft"
-          :key="education.id"
-        >
+    <div class="timeline">
+      <div
+        class="timeline-item"
+        v-for="(education, index) in store.education"
+        :key="education.id"
+        :class="{ 'left': index % 2 === 0, 'right': index % 2 !== 0 }"
+        data-aos="fade-up"
+        data-aos-duration="2500"
+      >
+        <div class="timeline-content">
           <h4 class="font-bold">{{ education.title }}</h4>
-          <p>{{ education.duration }}</p>
-          <p>{{ education.description }}</p>
-        </div>
-      </div>
-
-      <div class="right flex flex-col gap-4 desktop:w-[50%]">
-        <div
-          class="blog flex flex-col gap-2 p-4 shadow-lg shadow-cyan-500/50 rounded-lg"
-          v-for="education in store.educationRight"
-          :key="education.id"
-        >
-          <h4 class="font-bold">{{ education.title }}</h4>
-          <p>{{ education.duration }}</p>
+          <p class="text-sm text-gray-400">{{ education.duration }}</p>
           <p>{{ education.description }}</p>
         </div>
       </div>
     </div>
   </main>
 </template>
-
 <style scoped>
-.blog {
-  background-size: 100% 100%;
-  background-position:
-    0px 0px,
-    0px 0px,
-    0px 0px,
-    0px 0px,
-    0px 0px;
-  background-image: repeating-linear-gradient(315deg, #00ffff2e 92%, #073aff00 100%),
-    repeating-radial-gradient(75% 75% at 238% 218%, #00ffff12 30%, #073aff14 39%),
-    radial-gradient(99% 99% at 109% 2%, #00c9ffff 0%, #073aff00 100%),
-    radial-gradient(99% 99% at 21% 78%, #7b00ffff 0%, #073aff00 100%),
-    radial-gradient(160% 154% at 711px -303px, #2000ffff 0%, #073affff 100%);
-  color: white;
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: blue;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 3px;
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: white;
+  border: 4px solid blue;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.right::after {
+  left: -12px;
+}
+
+.timeline-content {
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  border: 1px solid blue;
+  color:black;
   animation: float 4s ease-in-out infinite;
 }
-.blog:hover {
+
+.timeline-content:hover {
   background: white;
   cursor: pointer;
   transition: all 2s ease-in-out;
   color: black;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
+
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -74,6 +104,31 @@ const store = useDataStore()
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item::after {
+    left: 15px;
+  }
+
+  .timeline-item.right::after {
+    left: 15px;
   }
 }
 </style>

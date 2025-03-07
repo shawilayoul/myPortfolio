@@ -1,43 +1,4 @@
 <script setup>
-/*gsap.registerPlugin(ScrollTrigger)
-
-const scrollContainer = ref(null)
-
-const handleScroll = () => {
-  const sections = scrollContainer.value.querySelectorAll('.section')
-  sections.forEach((section) => {
-    const rect = section.getBoundingClientRect()
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
-      gsap.fromTo(
-        section,
-        {
-          letterSpacing: '10px',
-          opacity: 0,
-          x: 300,
-          skewX: 65
-        },
-        {
-          letterSpacing: '0',
-          opacity: 1,
-          x: 0,
-          duration: 1,
-          delay: 0.3,
-          skewX: 0,
-          scrollTrigger: section
-        }
-      )
-    }
-  })
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-  handleScroll() // Initial call to animate sections on load.
-})
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll)
-})*/
 </script>
 <template>
   <main class="w-[100%] flex justify-between transition delay-3000 duration-3000" id="home">
@@ -45,9 +6,9 @@ onBeforeUnmount(() => {
       <div class="section" data-aos="fade-up" data-aos-duration="2500">
         <h3 class="desktop:text-lg mobile:text-sm">Salut!</h3>
 
-        <h1 class="desktop:text-[40px] font-bold my-2 mobile:text-[20px]">Je suis AOCHOL AYOUL</h1>
+        <h1 class="desktop:text-[40px] font-bold my-2 mobile:text-[20px]">Je suis Aochol Ayoul</h1>
 
-        <p class="desktop:text-[35px] mobile:text-[18px]">Développeur web junior</p>
+        <p class="desktop:text-[35px] mobile:text-[18px]">Développeur Full-Stack | À la recherche d'une alternance</p>
       </div>
       <div class="flex gap-12 cursor-pointer">
         <a href="https://github.com/shawilayoul">

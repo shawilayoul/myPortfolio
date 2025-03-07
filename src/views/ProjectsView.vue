@@ -11,6 +11,7 @@
       <div
         class="imgCon desktop:grid desktop:grid-cols-3 gap-10 mobile:grid mobile:grid-cols-1 moblie:w-[100%] m-auto flex"
       >
+        <!-- Project 1 -->
         <div
           class="container desktop:max-w-[400px] mobile:max-w-[320px]"
           data-aos="fade-up"
@@ -21,13 +22,17 @@
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
             <a href="https://github.com/shawilayoul/silvercake" class="hover:text-oranged"
-              >github Code</a
+              >Github Code</a
             >
-            <a href=" https://cakeart.vercel.app/" class="hover:text-oranged">webSite</a>
+            <a href="https://sleekstyle.onrender.com/" class="hover:text-oranged">E-commerce Dashboard</a>
+
           </div>
           <div class="laptop">
             <div class="laptop__screen">
-              <img src="../assets/images/cakeHom.png" width="1600" alt="Screen" />
+              <video width="100%" height="100%" controls>
+                <source src="../assets/videos/project1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="laptop__bottom">
               <div class="laptop__under"></div>
@@ -38,15 +43,19 @@
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
               ReactJs
             </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">SASS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              Express.Js
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              Tailwind Css
+            </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
               MongoDb
             </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              TanStack
-            </button>
           </div>
         </div>
+
+        <!-- Project 2 -->
         <div
           class="container desktop:max-w-[400px] mobile:max-w-[320px]"
           data-aos="fade-up"
@@ -56,21 +65,19 @@
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
-            <a href="#" class="hover:text-oranged">github Code</a>
+            <a href="#" class="hover:text-oranged">Music App</a>
             <a
-              href="https://wordpress.simplon-ara.fr/lyon/objnum23/wordpress11/"
+              href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
               class="hover:text-oranged"
-              >webSite</a
+              >Google play</a
             >
           </div>
           <div class="laptop">
             <div class="laptop__screen">
-              <img
-                src="../assets/images/sliverspoonhome.png"
-                width="1600"
-                height="1000"
-                alt="Screen"
-              />
+              <video width="100%" height="100%" controls>
+                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="laptop__bottom">
               <div class="laptop__under"></div>
@@ -79,46 +86,20 @@
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              wordpress
+              React Native
             </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">Figma</button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">CSS</button>
-          </div>
-        </div>
-        <div
-          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2500"
-        >
-          <div
-            class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
-          >
-            <a href="#" class="hover:text-oranged"
-              >Music App</a
-            >
-            <a href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes" class="hover:text-oranged">Google play</a>
-          </div>
-          <div class="laptop">
-            <div class="laptop__screen">
-              <img src="../assets/images/app1.jpg" width="1600" height="1000" alt="Screen" />
-            </div>
-            <div class="laptop__bottom">
-              <div class="laptop__under"></div>
-            </div>
-            <div class="laptop__shadow"></div>
-          </div>
-          <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">React Native</button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
               NestJs
             </button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
               MongoDb / FireBase
             </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">Tailwind CSS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              Tailwind CSS
+            </button>
           </div>
         </div>
+        <!-- Project 3 -->
         <div
           class="container desktop:max-w-[400px] mobile:max-w-[320px]"
           data-aos="fade-up"
@@ -128,16 +109,19 @@
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
-            <a href="https://github.com/shawilayoul/aocholprofile" class="hover:text-oranged"
-              >github Code</a
-            >
-            <a href="https://shawilayoul.github.io/aocholprofile/" class="hover:text-oranged"
-              >webSite</a
+            <a href="#" class="hover:text-oranged">Music App</a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
+              class="hover:text-oranged"
+              >Google play</a
             >
           </div>
           <div class="laptop">
             <div class="laptop__screen">
-              <img src="../assets/images/profile.png" width="1600" height="1000" alt="Screen" />
+              <video width="100%" height="100%" controls>
+                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="laptop__bottom">
               <div class="laptop__under"></div>
@@ -145,13 +129,21 @@
             <div class="laptop__shadow"></div>
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">React</button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              MongoDb
+              React Native
             </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">SASS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              NestJs
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb / FireBase
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              Tailwind CSS
+            </button>
           </div>
         </div>
+        <!-- Project 4 -->
         <div
           class="container desktop:max-w-[400px] mobile:max-w-[320px]"
           data-aos="fade-up"
@@ -161,14 +153,19 @@
           <div
             class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
           >
-            <a href="https://github.com/shawilayoul/sleekStyleVue" class="hover:text-oranged"
-              >github Code</a
+            <a href="#" class="hover:text-oranged">Music App</a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
+              class="hover:text-oranged"
+              >Google play</a
             >
-            <a href="https://sleekstyle.onrender.com" class="hover:text-oranged">webSite</a>
           </div>
           <div class="laptop">
             <div class="laptop__screen">
-              <img src="../assets/images/sleekStyle.png" width="1600" height="1000" alt="Screen" />
+              <video width="100%" height="100%" controls>
+                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div class="laptop__bottom">
               <div class="laptop__under"></div>
@@ -176,121 +173,113 @@
             <div class="laptop__shadow"></div>
           </div>
           <div class="bottom flex items-center justify-evenly text-white p-2">
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">React</button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">ExpressJs</button>
             <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
-              MongoDb
+              React Native
             </button>
-            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">Tailwind CSS</button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              NestJs
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb / FireBase
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              Tailwind CSS
+            </button>
           </div>
         </div>
-      </div>
-      <div class="mobil-ipad desktop:block mobile:hidden !important">
+        <!-- Project 5 -->
         <div
-          class="ipad"
+          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="2500"
         >
-          <div class="screen">
-            <img
-              src="../assets/images/cakeTablate.png"
-              alt="Image inside iPad"
-              class="ipad-image"
-            />
+          <div
+            class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
+          >
+            <a href="#" class="hover:text-oranged">Music App</a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
+              class="hover:text-oranged"
+              >Google play</a
+            >
+          </div>
+          <div class="laptop">
+            <div class="laptop__screen">
+              <video width="100%" height="100%" controls>
+                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="laptop__bottom">
+              <div class="laptop__under"></div>
+            </div>
+            <div class="laptop__shadow"></div>
+          </div>
+          <div class="bottom flex items-center justify-evenly text-white p-2">
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              React Native
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              NestJs
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb / FireBase
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              Tailwind CSS
+            </button>
           </div>
         </div>
+        <!-- Project 6 -->
         <div
-          class="ipad2"
+          class="container desktop:max-w-[400px] mobile:max-w-[320px]"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
           data-aos-duration="2500"
         >
-          <div class="screen">
-            <img
-              src="../assets/images/sliverTablate.png"
-              alt="Image inside iPad"
-              class="ipad-image"
-            />
+          <div
+            class="top flex text-white font-bold justify-between items-center mt-3 cursor-pointer"
+          >
+            <a href="#" class="hover:text-oranged">Music App</a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.fjuchristianvibes"
+              class="hover:text-oranged"
+              >Google play</a
+            >
           </div>
-        </div>
-        <div
-          class="ipad"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2500"
-        >
-          <div class="screen">
-            <img
-              src="../assets/images/cakeTablate.png"
-              alt="Image inside iPad"
-              class="ipad-image"
-            />
+          <div class="laptop">
+            <div class="laptop__screen">
+              <video width="100%" height="100%" controls>
+                <source src="../assets/videos/project2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="laptop__bottom">
+              <div class="laptop__under"></div>
+            </div>
+            <div class="laptop__shadow"></div>
           </div>
-        </div>
-        <div
-          class="ipad2"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2500"
-        >
-          <div class="screen">
-            <img
-              src="../assets/images/sliverTablate.png"
-              alt="Image inside iPad"
-              class="ipad-image"
-            />
-          </div>
-        </div>
-        <div
-          class="ipad3"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2500"
-        >
-          <div class="screen">
-            <img src="../assets/images/app1.jpg" alt="Image inside iPad" class="ipad-image" />
-          </div>
-        </div>
-        <div
-          class="phone1"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2500"
-        >
-          <div class="screen">
-            <img src="../assets/images/cakePhone.png" alt="Image inside iPad" class="ipad-image" />
-          </div>
-        </div>
-        <div
-          class="phone2"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2500"
-        >
-          <div class="screen">
-            <img
-              src="../assets/images/sliverPhone.png"
-              alt="Image inside iPad"
-              class="ipad-image"
-            />
-          </div>
-        </div>
-        <div
-          class="phone3"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="2500"
-        >
-          <div class="screen">
-            <img src="../assets/images/app1.jpg" alt="Image inside iPad" class="ipad-image" />
+          <div class="bottom flex items-center justify-evenly text-white p-2">
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              React Native
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              NestJs
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              MongoDb / FireBase
+            </button>
+            <button class="hover:text-oranged desktop:text-[15px] mobile:text-[13px]">
+              Tailwind CSS
+            </button>
           </div>
         </div>
       </div>
     </div>
   </main>
 </template>
-<!---laptop style-->
+
 <style scoped>
 .container {
   background-size: 100% 100%;
@@ -331,7 +320,7 @@
     box-shadow: 0 0.1rem 0 #cfcfcf;
     border: 2px solid #ccc;
     height: 250px;
-    img {
+    video {
       display: block;
       max-width: 100%;
       height: 100%;
@@ -416,132 +405,5 @@
     background: radial-gradient(ellipse closest-side, #000, transparent);
     opacity: 0.5;
   }
-}
-</style>
-<!---ip dad styling-->
-<style scoped>
-/* iPad shape */
-.projectContainer {
-  position: relative;
-}
-.ipad {
-  left: 23%;
-  top: 20%;
-  width: 130px; /* Adjust width as needed */
-  height: 180px; /* Adjust height as needed */
-  background-color: #e2e8f0;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-.ipad2 {
-  left: 56%;
-  top: 20%;
-  width: 130px; /* Adjust width as needed */
-  height: 180px; /* Adjust height as needed */
-  background-color: #e2e8f0;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-
-/***ipda3 style */
-.ipad3 {
-  right: 1%;
-  top: 20%;
-  width: 130px; /* Adjust width as needed */
-  height: 180px; /* Adjust height as needed */
-  background-color: #e2e8f0;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-/***phone 1 style */
-.phone1 {
-  left: 2%;
-  top: 22%;
-  width: 80px; /* Adjust width as needed */
-  height: 150px; /* Adjust height as needed */
-  background-color: lightgray;
-  border-radius: 10px;
-  padding: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-/***phone 2 style */
-.phone2 {
-  left: 37%;
-  top: 22%;
-  width: 80px; /* Adjust width as needed */
-  height: 150px; /* Adjust height as needed */
-  background-color: lightgray;
-  border-radius: 10px;
-  padding: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-/***phone 3 style */
-.phone3 {
-  right: 23%;
-  top: 22%;
-  width: 80px; /* Adjust width as needed */
-  height: 150px; /* Adjust height as needed */
-  background-color: lightgray;
-  border-radius: 10px;
-  padding: 5px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  position: relative;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-/* Screen inside the iPad */
-.screen {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Image inside the iPad */
-.ipad-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area */
 }
 </style>

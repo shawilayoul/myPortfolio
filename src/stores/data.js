@@ -3,35 +3,14 @@ import { defineStore } from 'pinia'
 export const useDataStore = defineStore('data', {
   // eslint-disable-next-line no-unused-labels
   state: () => ({
-    personalInfo: [
-      {
-        name: 'John Doe',
-        title: 'Software Engineer',
-        Email: 'john.doe@example.com',
-        Phone: '07 82 37 11 77',
-        Address: ' 1234 Main St, Anytown, USA'
-      }
-    ],
-    jobs: [
-      {
-        title: 'Software Engineer',
-        company: 'Tech Company',
-        duration: 'Jan 2020 - Present',
-        description: 'Developed various web applications using modern frameworks.'
-      },
-      {
-        title: 'Junior Developer',
-        company: 'Another Tech Company',
-        duration: 'Jan 2018 - Dec 2019',
-        description: 'Assisted in developing web applications and maintaining existing codebases.'
-      }
-    ],
+  
     education: [
       {
         id: 1,
         title: 'Développeur web et web mobil, AFPA',
         duration: 'Du 15/04/2024 au 02/2025',
-        description: ''
+        description: 
+        'Apprentssage des technologies React, Node.js, Express, MongoDB, MySQL, TypeScript, NestJs, GraphQL, Prisma, Docker.'
       },
       {
         id: 2,
@@ -74,7 +53,8 @@ export const useDataStore = defineStore('data', {
         id: 1,
         title: 'Développeur web et web mobil, AFPA',
         duration: 'Du 15/04/2024 au 02/2025',
-        description: ''
+        description: 
+        'Apprentssage des technologies React, Node.js, Express, MongoDB, MySQL, TypeScript, NestJs, GraphQL, Prisma, Docker.'
       },
       {
         id: 2,
@@ -105,7 +85,7 @@ export const useDataStore = defineStore('data', {
         id: 2,
         title:
           ' Licence de sciences en Informatique (enseignement en anglais), Comboni, Khartoum,Soudan',
-        duration: 'De 2018 à 2020',
+        duration: 'De 2017 à 2020',
         description: 'Acquérir les bases du langage de programmation JavaScript, C++, PHP et SQL'
       },
 
