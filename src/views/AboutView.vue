@@ -2,7 +2,7 @@
 import { image } from '@/assets/images'
 import { useDataStore } from '@/stores/data'
 import { ref, computed } from 'vue'
-import cv from '@/assets/aocholAyoulMojowokCV.pdf'
+import cv from '@/assets/AocholAyoulMojowokCV.pdf'
 
 /**tackling  about me section */
 
