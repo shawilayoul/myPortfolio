@@ -3,11 +3,11 @@
 import { useDataStore } from '@/stores/data'
 const store = useDataStore()
 </script>
-
 <template>
   <main class="w-[80%] m-auto desktop:h-[100vh] flex items-center justify-center flex-col gap-5 z-1 desktop:mb-[200px] mobile:mb-[60px]">
     <div class="top" data-aos="fade-up" data-aos-duration="2500">
-      <h2 class="font-bold desktop:text-[25px] mobile:text-[20px]">Éducation</h2>
+      <h2 class="font-bold desktop:text-[25px] mobile:text-[20px]">Éducation et Expériences
+      </h2>
     </div>
     <div class="timeline">
       <div
