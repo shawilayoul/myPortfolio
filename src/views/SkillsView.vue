@@ -9,7 +9,7 @@ export default {
       { name: 'CSS (Sass, Tailwind, Style Component)', percentage: 90 },
       { name: 'JavaScript / TypeScript', percentage: 85 },
       { name: 'ReactJs / React Native', percentage: 80 },
-      { name: 'VueJs', percentage: 60 },
+      { name: 'Angular', percentage: 60 },
       { name: 'WordPress', percentage: 70 }
     ])
 
@@ -17,9 +17,10 @@ export default {
       { name: 'NodeJs', percentage: 80 },
       { name: 'ExpressJs', percentage: 80 },
       { name: 'NestJs', percentage: 70 },
+      { name: 'Java (spring Boot)', percentage: 60 },
       { name: 'MongoDB', percentage: 80 },
-      { name: 'MySQL', percentage: 75 },
-      { name: 'SQL', percentage: 70 }
+      { name: 'MySQL,SQL', percentage: 75 },
+      
     ])
 
     // Animate progress bars on mount

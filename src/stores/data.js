@@ -38,7 +38,7 @@ export const useDataStore = defineStore('data', {
         id: 5,
         title:
           ' Licence de sciences en Informatique (enseignement en anglais), Comboni, Khartoum,Soudan',
-        duration: 'De 2018 à 2020',
+        duration: 'De 2017 à 2020',
         description: 'Acquérir les bases du langage de programmation JavaScript, Java, c++ et SQL'
       },
 
