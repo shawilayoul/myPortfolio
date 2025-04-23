@@ -8,7 +8,8 @@
 
         <h1 class="desktop:text-[40px] font-bold my-2 mobile:text-[20px]">Je suis Aochol Ayoul</h1>
 
-        <p class="desktop:text-[35px] mobile:text-[18px]">Développeur Full-Stack | À la recherche d'une alternance</p>
+        <p class="desktop:text-[35px] mobile:text-[18px]">Développeur Full-Stack JavaScript (React/Angular) & Backend (Node.js/Spring Boot) 
+         </p>
       </div>
       <div class="flex gap-12 cursor-pointer">
         <a href="https://github.com/shawilayoul">

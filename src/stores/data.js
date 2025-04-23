@@ -43,7 +43,5 @@ export const useDataStore = defineStore('data', {
       },
 
     ],
- 
-     AboutDescriptionData :
-"Bonjour, je m'appelle Aochol Ayoul. Après avoir étudié l'informatique pendant trois ans au Comboni College de Khartoum (Soudan) entre 2017 et 2020, j’ai décidé de poursuivre ma passion pour l'informatique en France, en me spécialisant dans le développement Web Full-Stack. Diplômé d’une formation intensive à l’AFPA (Développeur Web & Mobile) Bac+2, j’ai également complété plusieurs programmes spécialisés, notamment en développement iOS avec Apple/Simplon et en création de sites WordPress.Je code quotidiennement avec des technologies modernes tels que React, Node.js,( NestJS, ExpressJS), Angular, Java/Spring Boot(en cours), ainsi que les bases de données MySQL et MongoDB et j'ai réalisé plusieurs projets en autonomie.Je suis actuellement à la recherche d’un contrat d’alternance en tant que Développeur Full-Stack, dans le cadre du Bachelor Concepteur Développeur d’Applications pour la rentrée septembre ( alternance 3 semaines entreprise / 1 semaine formation)."  })
-})
+  AboutDescriptionData :"Développeur Full-Stack passionné, diplômé d’une formation intensive AFPA (Bac+2) et ancien étudiant en informatique au Comboni College (Soudan). Spécialisé dans les technologies modernes comme React, Angular, Node.js (NestJS/ExpressJS), et Java/Spring Boot, je maîtrise également la conception d’APIs et les bases de données (MySQL/MongoDB).Autonome et rigoureux, j’ai consolidé mes compétences à travers des projets personnels et des formations ciblées (dont un programme iOS avec Apple/Simplon). Actuellement en recherche d’une alternance (3 semaines entreprise / 1 semaine formation) pour un Bachelor CDA à partir de septembre, je souhaite intégrer une équipe dynamique où contribuer avec ma double expertise front-end et back-end."
+})});
