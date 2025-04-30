@@ -2,7 +2,7 @@
 import { image } from '@/assets/images'
 import { useDataStore } from '@/stores/data'
 import { ref, computed } from 'vue'
-import cv from '@/assets/AocholAyoulMojowokCV.pdf'
+//import cv from '@/assets/AocholAyoulMojowokCV.pdf'
 
 /**tackling  about me section */
 
@@ -47,7 +47,7 @@ const toggleDescription = () => {
         <i class="pi pi-instagram text-oranged desktop:text-[2rem] mobile:text-[1.5rem]"></i>
         <i class="pi pi-twitter text-blue desktop:text-[2rem] mobile:text-[1.5rem]"></i>
       </div>
-      <a download="" :href="cv">
+      <a download="">
         <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer mobile:text-[16px]">
           Télécharger CV
         </button></a
