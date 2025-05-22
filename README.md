@@ -2,16 +2,16 @@
 
 A personal portfolio website designed and developed to showcase my projects, technical skills, and professional background.
 
-## 🌐 Live Website
+## Live Website
 👉 [https://aocholportfolio.netlify.app/](https://aocholportfolio.netlify.app/)
 
-## 🔧 Technologies Used
+## Technologies Used
 - **Vue.js**: For building dynamic and interactive components.
 - **Sass (SCSS)**: For modular, maintainable, and modern styling.
 - **HTML5 & CSS3**
 - **JavaScript (ES6+)**
 
-## ✨ Features
+## Features
 - Fully responsive design for desktop, tablet, and mobile devices.
 - Clean and modern UI/UX.
 - Optimized performance for fast loading.
@@ -19,12 +19,12 @@ A personal portfolio website designed and developed to showcase my projects, tec
 - "About" section with skills and experience.
 - Contact form for professional inquiries.
 
-## 🎯 Goals
+## Goals
 - Create a visually appealing and user-friendly portfolio to highlight my work.
 - Apply best practices in Vue.js and SCSS development.
 - Ensure a smooth experience across all device types.
 
-## 🚀 Installation Instructions
+## Installation Instructions
 
 1. Clone the repository:
    ```bash
