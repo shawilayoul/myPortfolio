@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 <template>
   <main class="w-[100%] flex justify-between transition delay-3000 duration-3000" id="home">
     <div class="left ml-[10%] flex flex-col items-start justify-center gap-12">
@@ -8,8 +7,11 @@
 
         <h1 class="desktop:text-[40px] font-bold my-2 mobile:text-[20px]">Je suis Aochol Ayoul</h1>
 
-        <p class="desktop:text-[35px] mobile:text-[18px]">Développeur Full-Stack JavaScript (React/Angular) & Backend (Node.js/Spring Boot) 
-         </p>
+        <p class="desktop:text-[35px] mobile:text-[18px]">
+          Étudiant Concepteur Développeur d'Applications
+           @ M2i Formation, Lyon 🚀 En recherche de
+          stage non rémunéré (janv-juin 2026) 
+        </p>
       </div>
       <div class="flex gap-12 cursor-pointer">
         <a href="https://github.com/shawilayoul">
@@ -22,7 +24,9 @@
         <i class="pi pi-twitter text-blue desktop:text-[2rem] mobile:text-[1.5rem]"></i>
       </div>
       <a href="#projects">
-        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">Voir mon travail</button></a
+        <button class="hombtn text-white p-2 px-5 rounded-lg cursor-pointer">
+          Voir mon travail
+        </button></a
       >
     </div>
     <div
